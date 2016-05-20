@@ -3,7 +3,7 @@
 #   may 12, 2016
 
 Version         1
-Geometry        /Home/rosserv/moiseev/MEGAlib/MyComPair/Geometry_TowerModel/CompairBase.geo.setup
+Geometry        $HOME/TowerModel/CompairBase.geo.setup
 
 # Physics list
 PhysicsListEM                        Livermore
