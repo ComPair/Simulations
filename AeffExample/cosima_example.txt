@@ -1,0 +1,55 @@
+Instructions for calculating Aeff for CompairBase.geo.setup. 
+These numbers are for the TowerModel as of 7/15/2016
+
+I am using an example source file, based on the example source file that is provided in MEGAlib
+
+Information about UseCase1.source:
+It uses the Livermore physics lists which are recommended for lower energy EM processes (Standard is better for high energy events)
+It requires 20k triggereed events before stopping. (There are various ways to stop the process, such as number of events or time)
+It is a restricted point source starting at an x,y,z position (in cm) from the detector. The position has to be outside the surrounding sphere of the detector. There are a lot of options for the sources. 
+It is a monoenergetic pencil beam at 1000 keV of gamma-rays (particle type 1)
+There are also various types of sources (gaussian, black body, etc)
+The flux is measured in particles/cm2/s for far field, or intensity in particles/sec for all other sources
+
+Now you're ready to use cosima, the COsmic SImulator for MegAlib based on Geant4
+
+To execute
+>>cosmia UseCase1.source
+
+This runs events until the stop criteria. 
+As this runs, the output (for me) looked like this: 
+...
+Storing event 16158 of 998673 at t_obs=499.827s ... Please stand by... Done
+Hit in strip detector "Wafer_2_4" at: (-34.0625/10.6125/55.25)  (14, 172) with 63.5747 keV (64)
+Hit in strip detector "Wafer_2_1" at: (5.4375/-10.4875/25.25)  (9, 197) with 11.6866 keV (12)
+Hit in strip detector "Wafer_2_4" at: (-34.0875/10.6125/55.25)  (14, 173) with 55.1083 keV (55)
+Hit in strip detector "Wafer_2_4" at: (-34.0875/10.5875/55.25)  (13, 173) with 38.8521 keV (39)
+Hit in strip detector "Wafer_2_4" at: (-34.1125/10.5875/55.25)  (13, 174) with 266.204 keV (266)
+Hit in strip detector "CSILog_21" at: (38.5/-8.75/-10.15)  (37, 0) with 96.4946 keV (96)
+Hit in Anger camera "sideACDPlastic" at position: (48.858/-4.54376/34.25) with 46.7155 keV
+Storing event 16159 of 998792 at t_obs=499.889s ... Please stand by... Done
+...
+
+Once it hit 20k triggers, this was the output summary:
+
+Summary for run UseCase
+
+Total number of generated particles:     1237723
+  Source Pos:                            619029
+  Source Neg:                            618694
+
+Total CPU time spent in run:             251.718 sec
+Time spent per event:                    0.000203371 sec
+
+Observation time:                        618.634 sec
+
+Graphics systems deleted.
+Visualization Manager deleting...
+
+
+Then outputs a UseCase1.inc1.id1.sim file
+This file is needed for the subsequent steps.  
+
+Next step is to use sivan or revan to analyze the data.... 
+
+
