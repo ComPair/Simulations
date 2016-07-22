@@ -1,9 +1,10 @@
 # An example run for Cosima
 
 
-Version         1
-Geometry        $COMPAIRPATH/Geometry/TowerModel/CompairBase.geo.setup // Update this to your path
-PhysicsListEM   Livermore
+Version          1
+Geometry         $COMPAIRPATH/Geometry/TowerModel/CompairBase.geo.setup // Update this to your path
+CheckForOverlaps 1000 0.01
+PhysicsListEM    Livermore
 
 StoreCalibrate                 true
 StoreSimulationInfo            true
