@@ -18,7 +18,7 @@ FFPS.NTriggers             10000
 
 FFPS.Source One
 One.ParticleType        1
-One.Beam                FarFieldPointSource  180 360
+One.Beam                FarFieldPointSource  0 0
 One.Spectrum            Mono  1000
 One.Flux                2000.0
 
