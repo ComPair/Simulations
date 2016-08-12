@@ -12,7 +12,7 @@ StoreOnlyEventsWithEnergyLoss  true  // Only relevant if no trigger criteria is 
 DiscretizeHits                 true
 
 Run FFPS
-FFPS.FileName              FarFieldPointSource_1MeV_Cos0
+FFPS.FileName              FarFieldPointSource_1MeV_Cos1
 FFPS.NTriggers             100000
 
 
