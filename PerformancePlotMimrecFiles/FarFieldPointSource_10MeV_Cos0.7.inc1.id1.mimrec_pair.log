@@ -1,0 +1,103 @@
+
+**************************************************************************
+*                                                                        *
+*            Mimrec - MEGAlib image reconstruction (and more)            *
+*                                                                        *
+*             This program is part of MEGAlib version 2.31.00            *
+*                (C) by Andreas Zoglauer and contributors                *
+*                                                                        *
+*                      Master reference for MEGAlib:                     *
+*            A. Zoglauer et al., NewAR 50 (7-8), 629-632, 2006           *
+*                                                                        *
+*            For more information about MEGAlib please visit:            *
+*                        http://megalibtoolkit.com                       *
+*                                                                        *
+**************************************************************************
+
+              You are using a development version of MEGAlib              
+
+Command-line parser: Use file /Users/jracusin/proposals/ComPair/simulations/mysims/Sim_a_thon/FarFieldPointSource_10MeV_Cos0.7.inc1.id1.tra
+   ***  Info  ***  for detector topACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Info  ***  for detector sideACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: topACD
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: sideACD
+Geometry MyComPair loaded!
+
+Energy spectrum - some additional statistics:
+Number of events:     13848 (inside=13848, outside=0)
+Avg. measured energy: 6943.57 keV
+
+ FCN=969.008 FROM MIGRAD    STATUS=CONVERGED      59 CALLS          60 TOTAL
+                     EDM=4.94966e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.69527e+02   3.88995e+00   6.75016e-02   2.19687e-04
+   2  Mean         6.95717e+03   1.54859e+01   3.32537e-01   6.98525e-06
+   3  Sigma        1.79869e+03   1.14424e+01   3.70046e-05   2.70731e-01
+                               ERR DEF= 0.5
+ FCN=808.461 FROM MIGRAD    STATUS=CONVERGED      79 CALLS          80 TOTAL
+                     EDM=3.11684e-12    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.90538e+02   4.30930e+00   6.68365e-02   1.39650e-07
+   2  Mean         7.08964e+03   1.54009e+01   2.97554e-01   7.64047e-08
+   3  Sigma        1.64456e+03   1.25347e+01   3.72622e-05   7.55046e-04
+                               ERR DEF= 0.5
+ FCN=466.215 FROM MIGRAD    STATUS=CONVERGED      80 CALLS          81 TOTAL
+                     EDM=6.48678e-10    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.67325e+02   4.25567e+00   4.77500e-02  -1.42155e-06
+   2  Mean         7.20343e+03   1.89371e+01   2.80632e-01  -5.10696e-07
+   3  Sigma        1.83241e+03   1.94787e+01   4.02268e-05   5.59477e-03
+                               ERR DEF= 0.5
+ FCN=376.225 FROM MIGRAD    STATUS=CONVERGED      77 CALLS          78 TOTAL
+                     EDM=1.53709e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.90598e+02   4.83838e+00   4.85130e-02  -5.03849e-06
+   2  Mean         7.38742e+03   1.89834e+01   2.42465e-01  -7.97134e-07
+   3  Sigma        1.57647e+03   2.03933e+01   3.90192e-05  -1.30711e-02
+                               ERR DEF= 0.5
+ FCN=357.568 FROM MIGRAD    STATUS=CONVERGED      70 CALLS          71 TOTAL
+                     EDM=2.49485e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.95452e+02   4.98761e+00   4.90843e-02   1.16279e-05
+   2  Mean         7.45283e+03   1.99040e+01   2.35419e-01   1.33265e-06
+   3  Sigma        1.50863e+03   2.09521e+01   3.85710e-05   7.57083e-03
+                               ERR DEF= 0.5
+ FCN=306.863 FROM MIGRAD    STATUS=CONVERGED      78 CALLS          79 TOTAL
+                     EDM=2.41678e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     4.04462e+02   5.35061e+00   5.05129e-02  -2.79685e-05
+   2  Mean         7.66720e+03   2.34204e+01   2.12133e-01   2.92040e-06
+   3  Sigma        1.32019e+03   2.20655e+01   3.54429e-05   2.35336e-03
+                               ERR DEF= 0.5
+ FCN=330.003 FROM MIGRAD    STATUS=CONVERGED      77 CALLS          78 TOTAL
+                     EDM=1.48096e-10    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     4.00906e+02   5.15943e+00   4.93275e-02  -2.64473e-06
+   2  Mean         7.54469e+03   2.07599e+01   2.21709e-01   4.31692e-08
+   3  Sigma        1.42142e+03   2.10308e+01   3.67801e-05  -5.68394e-04
+                               ERR DEF= 0.5
+
+Some statistics: 
+
+Analyzed pair events:        12114
+Pair events in histogram:    6480 (53.4918%)
+
+0.68% containment: 11.3
+
+Some statistics: 
+
+Analyzed pair events:        12114
+Pair events in histogram:    4299 (35.4879%)
+
+0.68% containment: 7.425
