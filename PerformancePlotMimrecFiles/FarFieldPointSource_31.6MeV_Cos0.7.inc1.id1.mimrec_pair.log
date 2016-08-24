@@ -1,0 +1,89 @@
+
+**************************************************************************
+*                                                                        *
+*            Mimrec - MEGAlib image reconstruction (and more)            *
+*                                                                        *
+*             This program is part of MEGAlib version 2.31.00            *
+*                (C) by Andreas Zoglauer and contributors                *
+*                                                                        *
+*                      Master reference for MEGAlib:                     *
+*            A. Zoglauer et al., NewAR 50 (7-8), 629-632, 2006           *
+*                                                                        *
+*            For more information about MEGAlib please visit:            *
+*                        http://megalibtoolkit.com                       *
+*                                                                        *
+**************************************************************************
+
+              You are using a development version of MEGAlib              
+
+Command-line parser: Use file /Users/jracusin/proposals/ComPair/simulations/mysims/Sim_a_thon/FarFieldPointSource_31.6MeV_Cos0.7.inc1.id1.tra
+   ***  Info  ***  for detector topACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Info  ***  for detector sideACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: topACD
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: sideACD
+Geometry MyComPair loaded!
+
+Energy spectrum - some additional statistics:
+Number of events:     2957 (inside=2957, outside=0)
+Avg. measured energy: 9776.71 keV
+
+
+Energy spectrum - some additional statistics:
+Number of events:     12260 (inside=12260, outside=0)
+Avg. measured energy: 20571.6 keV
+
+
+Energy spectrum - some additional statistics:
+Number of events:     12260 (inside=12260, outside=0)
+Avg. measured energy: 20571.6 keV
+
+ FCN=1634.13 FROM MIGRAD    STATUS=CONVERGED      83 CALLS          84 TOTAL
+                     EDM=3.66584e-11    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     2.18908e+02   2.54121e+00   5.51950e-02   2.62605e-06
+   2  Mean         2.13365e+04   9.05665e+01   2.35536e+00  -8.09804e-09
+   3  Sigma        8.26750e+03   8.00857e+01   7.12883e-05   2.16985e-03
+                               ERR DEF= 0.5
+ FCN=352.494 FROM MIGRAD    STATUS=CONVERGED     112 CALLS         113 TOTAL
+                     EDM=5.59295e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.35552e+02   5.01624e+00   5.17220e-02  -1.85356e-04
+   2  Mean         2.54637e+04   4.80681e+01   5.49309e-01  -1.91729e-06
+   3  Sigma        3.15285e+03   3.94274e+01   2.47774e-05  -1.81510e-01
+                               ERR DEF= 0.5
+ FCN=202.53 FROM MIGRAD    STATUS=CONVERGED      78 CALLS          79 TOTAL
+                     EDM=7.26158e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.14563e+02   5.00852e+00   3.67657e-02  -3.72947e-05
+   2  Mean         2.55125e+04   5.84542e+01   5.31823e-01  -1.30752e-06
+   3  Sigma        3.55869e+03   6.44182e+01   2.84116e-05   1.79558e-02
+                               ERR DEF= 0.5
+ FCN=151.8 FROM MIGRAD    STATUS=CONVERGED      81 CALLS          82 TOTAL
+                     EDM=2.22895e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.26089e+02   5.52388e+00   3.61759e-02  -5.20342e-05
+   2  Mean         2.61610e+04   6.19816e+01   4.21275e-01   7.00569e-06
+   3  Sigma        2.95284e+03   6.12119e+01   2.33712e-05  -2.08796e-03
+                               ERR DEF= 0.5
+
+Some statistics: 
+
+Analyzed pair events:        7376
+Pair events in histogram:    5158 (69.9295%)
+
+0.68% containment: 4.9
+
+Some statistics: 
+
+Analyzed pair events:        7376
+Pair events in histogram:    3520 (47.7223%)
+
+0.68% containment: 2.925
