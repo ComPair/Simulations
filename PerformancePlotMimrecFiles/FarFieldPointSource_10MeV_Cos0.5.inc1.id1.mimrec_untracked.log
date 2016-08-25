@@ -1,0 +1,165 @@
+
+**************************************************************************
+*                                                                        *
+*            Mimrec - MEGAlib image reconstruction (and more)            *
+*                                                                        *
+*             This program is part of MEGAlib version 2.31.00            *
+*                (C) by Andreas Zoglauer and contributors                *
+*                                                                        *
+*                      Master reference for MEGAlib:                     *
+*            A. Zoglauer et al., NewAR 50 (7-8), 629-632, 2006           *
+*                                                                        *
+*            For more information about MEGAlib please visit:            *
+*                        http://megalibtoolkit.com                       *
+*                                                                        *
+**************************************************************************
+
+              You are using a development version of MEGAlib              
+
+Command-line parser: Use file /Users/reginamcaputo/Desktop/ComPair/Simulatons/PerformancePlotMimrecFiles/../PerformancePlotTraFiles/FarFieldPointSource_10MeV_Cos0.5.inc1.id1.tra
+   ***  Info  ***  for detector topACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Info  ***  for detector sideACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: topACD
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: sideACD
+Geometry MyComPair loaded!
+
+Energy spectrum - some additional statistics:
+Number of events:     29145 (inside=29145, outside=0)
+Avg. measured energy: 6898.52 keV
+
+ FCN=12.0796 FROM MIGRAD    STATUS=CONVERGED     106 CALLS         107 TOTAL
+                     EDM=8.42163e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.05934e+03   1.72011e+01   2.93546e-02  -2.13348e-06
+   2  Mean         9.49835e+03   9.33280e+00   2.21122e-02  -3.14090e-05
+   3  Sigma        4.76337e+02   1.55927e+01   2.44802e-05  -1.09186e-02
+                               ERR DEF= 0.5
+
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+Error: You zoomed in too much into your ARM peak! Use a larger window around the peak!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        4164
+Compton and pair events in histogram:    437 (10.4947%)
+
+RMS:                                     10.0714 deg
+
+Total FWHM of fit (not of data!):        147.487 deg
+Maximum of fit (x position):             12.1079 deg (1-sigma uncertainty: 11.99 deg ... 12.2171 deg) with maximum 7.78929 cts
+
+
+
+Error: You zoomed in too much into your ARM peak! Use a larger window around the peak!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        4164
+Compton and pair events in histogram:    437 (10.4947%)
+
+RMS:                                     10.0714 deg
+
+Total FWHM of fit (not of data!):        96.5028 deg
+Maximum of fit (x position):             15.6638 deg (1-sigma uncertainty: 14.7502 deg ... 16.4388 deg) with maximum 56.8948 cts
+
+
+
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+Error: You zoomed in too much into your ARM peak! Use a larger window around the peak!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+Error: You zoomed in too much into your ARM peak! Use a larger window around the peak!
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        4164
+Compton and pair events in histogram:    1261 (30.2834%)
+
+RMS:                                     21.0716 deg
+
+Total FWHM of fit (not of data!):        163.966 deg
+Maximum of fit (x position):             27.8112 deg (1-sigma uncertainty: 26.8831 deg ... 28.7676 deg) with maximum 157.111 cts
+
+
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+Error: You zoomed in too much into your ARM peak! Use a larger window around the peak!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+Error: You zoomed out too much from your ARM peak or don't have enough bins! Use a smaller window around the peak or more bins!
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        4164
+Compton and pair events in histogram:    1261 (30.2834%)
+
+RMS:                                     21.0716 deg
+
+Total FWHM of fit (not of data!):        124.549 deg
+Maximum of fit (x position):             26.3718 deg (1-sigma uncertainty: 25.7872 deg ... 27.8715 deg) with maximum 71.3228 cts
+
+
+
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        4164
+Compton and pair events in histogram:    4164 (100%)
+
+RMS:                                     46.3276 deg
+
+Total FWHM of fit (not of data!):        119.785 deg (90% confidence interval: 103.731 deg ... 133.093 deg)
+Maximum of fit (x position):             78.1024 deg (1-sigma uncertainty: 77.3412 deg ... 78.8664 deg) with maximum 225.815 cts
+
+
+
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        4164
+Compton and pair events in histogram:    4164 (100%)
+
+RMS:                                     46.3276 deg
+
+Total FWHM of fit (not of data!):        119.785 deg (90% confidence interval: 103.731 deg ... 133.093 deg)
+Maximum of fit (x position):             78.1024 deg (1-sigma uncertainty: 77.3412 deg ... 78.8664 deg) with maximum 225.815 cts
+
