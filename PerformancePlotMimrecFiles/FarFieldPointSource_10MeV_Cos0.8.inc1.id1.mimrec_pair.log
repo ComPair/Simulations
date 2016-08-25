@@ -1,0 +1,78 @@
+
+**************************************************************************
+*                                                                        *
+*            Mimrec - MEGAlib image reconstruction (and more)            *
+*                                                                        *
+*             This program is part of MEGAlib version 2.31.00            *
+*                (C) by Andreas Zoglauer and contributors                *
+*                                                                        *
+*                      Master reference for MEGAlib:                     *
+*            A. Zoglauer et al., NewAR 50 (7-8), 629-632, 2006           *
+*                                                                        *
+*            For more information about MEGAlib please visit:            *
+*                        http://megalibtoolkit.com                       *
+*                                                                        *
+**************************************************************************
+
+              You are using a development version of MEGAlib              
+
+Command-line parser: Use file /Users/jracusin/proposals/ComPair/simulations/mysims/Sim_a_thon/FarFieldPointSource_10MeV_Cos0.8.inc1.id1.tra
+   ***  Info  ***  for detector topACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Info  ***  for detector sideACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: topACD
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: sideACD
+Geometry MyComPair loaded!
+
+Energy spectrum - some additional statistics:
+Number of events:     13665 (inside=13665, outside=0)
+Avg. measured energy: 7030.51 keV
+
+ FCN=267.761 FROM MIGRAD    STATUS=CONVERGED      89 CALLS          90 TOTAL
+                     EDM=5.18647e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     4.04869e+02   5.67244e+00   4.92699e-02   1.14266e-05
+   2  Mean         7.92559e+03   2.24317e+01   1.95973e-01   1.38578e-06
+   3  Sigma        1.22095e+03   2.25883e+01   5.21144e-05   1.47951e-02
+                               ERR DEF= 0.5
+ FCN=305.43 FROM MIGRAD    STATUS=CONVERGED      78 CALLS          79 TOTAL
+                     EDM=6.24791e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     4.17799e+02   6.03153e+00   5.86157e-02  -1.59387e-04
+   2  Mean         8.13279e+03   2.07180e+01   1.74750e-01  -2.06399e-05
+   3  Sigma        1.00501e+03   1.72138e+01   4.40853e-05  -1.07637e-01
+                               ERR DEF= 0.5
+ FCN=268.35 FROM MIGRAD    STATUS=CONVERGED      82 CALLS          83 TOTAL
+                     EDM=2.40176e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     4.14091e+02   6.31334e+00   5.85954e-02   6.30792e-06
+   2  Mean         8.30427e+03   2.13543e+01   1.56410e-01  -1.19228e-06
+   3  Sigma        8.94892e+02   1.67066e+01   4.02494e-05   3.56136e-03
+                               ERR DEF= 0.5
+
+Some statistics: 
+
+Analyzed pair events:        8853
+Pair events in histogram:    8853 (100%)
+
+0.68% containment: 31.5
+
+Some statistics: 
+
+Analyzed pair events:        8853
+Pair events in histogram:    6536 (73.8281%)
+
+0.68% containment: 15.4
+
+Some statistics: 
+
+Analyzed pair events:        8853
+Pair events in histogram:    4399 (49.6894%)
+
+0.68% containment: 9.075

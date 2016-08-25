@@ -1,0 +1,91 @@
+
+**************************************************************************
+*                                                                        *
+*            Mimrec - MEGAlib image reconstruction (and more)            *
+*                                                                        *
+*             This program is part of MEGAlib version 2.31.00            *
+*                (C) by Andreas Zoglauer and contributors                *
+*                                                                        *
+*                      Master reference for MEGAlib:                     *
+*            A. Zoglauer et al., NewAR 50 (7-8), 629-632, 2006           *
+*                                                                        *
+*            For more information about MEGAlib please visit:            *
+*                        http://megalibtoolkit.com                       *
+*                                                                        *
+**************************************************************************
+
+              You are using a development version of MEGAlib              
+
+Command-line parser: Use file /Users/jracusin/proposals/ComPair/simulations/mysims/Sim_a_thon/FarFieldPointSource_1MeV_Cos0.8.inc1.id1.tra
+   ***  Info  ***  for detector topACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Info  ***  for detector sideACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: topACD
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: sideACD
+Geometry MyComPair loaded!
+
+Energy spectrum - some additional statistics:
+Number of events:     10068 (inside=10068, outside=0)
+Avg. measured energy: 931.224 keV
+
+ FCN=24.4232 FROM MIGRAD    STATUS=CONVERGED      72 CALLS          73 TOTAL
+                     EDM=6.46477e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.69298e+03   2.56657e+01   6.98879e-02   6.55374e-08
+   2  Mean         9.95413e+02   2.51521e-01   8.59639e-04   1.96015e-04
+   3  Sigma        1.98939e+01   1.97023e-01   9.01076e-06   2.13775e-02
+                               ERR DEF= 0.5
+
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        6919
+Compton and pair events in histogram:    5824 (84.174%)
+
+RMS:                                     5.60055 deg
+
+Total FWHM of fit (not of data!):        4.95 deg (90% confidence interval: 4.71435 deg ... 5.21525 deg)
+Maximum of fit (x position):             0.00555928 deg (1-sigma uncertainty: -0.202502 deg ... 0.193716 deg) with maximum 321.044 cts
+
+
+
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        6919
+Compton and pair events in histogram:    4405 (63.6653%)
+
+RMS:                                     2.20456 deg
+
+Total FWHM of fit (not of data!):        4.89601 deg (90% confidence interval: 4.60472 deg ... 5.19944 deg)
+Maximum of fit (x position):             0.052468 deg (1-sigma uncertainty: -0.0390075 deg ... 0.208559 deg) with maximum 79.4247 cts
+
