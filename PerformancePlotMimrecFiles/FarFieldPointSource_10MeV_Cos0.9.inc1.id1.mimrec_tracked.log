@@ -1,0 +1,117 @@
+
+**************************************************************************
+*                                                                        *
+*            Mimrec - MEGAlib image reconstruction (and more)            *
+*                                                                        *
+*             This program is part of MEGAlib version 2.31.00            *
+*                (C) by Andreas Zoglauer and contributors                *
+*                                                                        *
+*                      Master reference for MEGAlib:                     *
+*            A. Zoglauer et al., NewAR 50 (7-8), 629-632, 2006           *
+*                                                                        *
+*            For more information about MEGAlib please visit:            *
+*                        http://megalibtoolkit.com                       *
+*                                                                        *
+**************************************************************************
+
+              You are using a development version of MEGAlib              
+
+Command-line parser: Use file /Users/busonnew/Compair/MegaLib/MEGAlib/sim_v1/cosTh90/FarFieldPointSource_10MeV_Cos0.9.inc1.id1.tra
+   ***  Info  ***  for detector topACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Info  ***  for detector sideACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: topACD
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: sideACD
+Geometry MyComPair loaded!
+
+Energy spectrum - some additional statistics:
+Number of events:     6656 (inside=6656, outside=0)
+Avg. measured energy: 6492.52 keV
+
+ FCN=28963.2 FROM MIGRAD    STATUS=CONVERGED     102 CALLS         103 TOTAL
+                     EDM=9.93877e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.73331e+02   3.46673e-01   2.16345e-02   2.67808e-04
+   2  Mean         9.07347e+03   3.50095e+00   2.79448e-01  -3.90834e-05
+   3  Sigma        1.25251e+03   5.41166e+00   1.15754e-04   4.74831e-02
+
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+Error: You zoomed in too much into your ARM peak! Use a larger window around the peak!
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        2939
+Compton and pair events in histogram:    1178 (40.0817%)
+
+RMS:                                     3.62473 deg
+
+Total FWHM of fit (not of data!):        9.59616 deg
+Maximum of fit (x position):             1.39201 deg (1-sigma uncertainty: 1.22407 deg ... 1.5671 deg) with maximum 24.3511 cts
+
+
+
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        2939
+Compton and pair events in histogram:    1655 (56.3117%)
+
+RMS:                                     6.33142 deg
+
+Total FWHM of fit (not of data!):        9.49398 deg (90% confidence interval: 4.12754 deg ... 18.8527 deg)
+Maximum of fit (x position):             2.99991 deg (1-sigma uncertainty: 2.76299 deg ... 3.23908 deg) with maximum 46.8446 cts
+
+
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+Error: You zoomed in too much into your ARM peak! Use a larger window around the peak!
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        2939
+Compton and pair events in histogram:    1155 (39.2991%)
+
+RMS:                                     3.53252 deg
+
+Total FWHM of fit (not of data!):        10.4195 deg
+Maximum of fit (x position):             1.30328 deg (1-sigma uncertainty: 1.12747 deg ... 1.48318 deg) with maximum 23.9894 cts
+

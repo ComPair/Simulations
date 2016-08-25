@@ -1,0 +1,61 @@
+
+**************************************************************************
+*                                                                        *
+*            Mimrec - MEGAlib image reconstruction (and more)            *
+*                                                                        *
+*             This program is part of MEGAlib version 2.31.00            *
+*                (C) by Andreas Zoglauer and contributors                *
+*                                                                        *
+*                      Master reference for MEGAlib:                     *
+*            A. Zoglauer et al., NewAR 50 (7-8), 629-632, 2006           *
+*                                                                        *
+*            For more information about MEGAlib please visit:            *
+*                        http://megalibtoolkit.com                       *
+*                                                                        *
+**************************************************************************
+
+              You are using a development version of MEGAlib              
+
+Command-line parser: Use file /Users/busonnew/Compair/MegaLib/MEGAlib/sim_v1/cosTh90/FarFieldPointSource_100MeV_Cos0.6.inc1.id1.tra
+   ***  Info  ***  for detector topACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Info  ***  for detector sideACD
+Ignoring noise threshold, because NoiseThresholdEqualsTriggerThreshold is set
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: topACD
+   ***  Warning  ***  
+You have not defined any trigger criterion for detector: sideACD
+Geometry MyComPair loaded!
+
+Energy spectrum - some additional statistics:
+Number of events:     9812 (inside=9812, outside=0)
+Avg. measured energy: 56233 keV
+
+ FCN=79816.6 FROM MIGRAD    STATUS=CONVERGED      72 CALLS          73 TOTAL
+                     EDM=4.20854e-11    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.5 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     2.53619e+02   2.74223e-01  -1.40874e-04  -1.68496e-05
+   2  Mean         7.06877e+04   2.10660e+01   4.55595e-02   2.06848e-07
+   3  Sigma        1.65327e+04   2.45823e+01  -1.15359e-06   1.59317e-02
+
+Some statistics: 
+
+Analyzed pair events:        4257
+Pair events in histogram:    2748 (64.5525%)
+
+0.68% containment: 2.35
+
+Some statistics: 
+
+Analyzed pair events:        4257
+Pair events in histogram:    2748 (64.5525%)
+
+0.68% containment: 2.35
+
+Some statistics: 
+
+Analyzed pair events:        4257
+Pair events in histogram:    2131 (50.0587%)
+
+0.68% containment: 1.545
