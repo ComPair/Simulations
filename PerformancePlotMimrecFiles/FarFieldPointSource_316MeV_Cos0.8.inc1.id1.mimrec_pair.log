@@ -31,32 +31,37 @@ Energy spectrum - some additional statistics:
 Number of events:     7786 (inside=7786, outside=0)
 Avg. measured energy: 124032 keV
 
- FCN=25.8162 FROM MIGRAD    STATUS=CONVERGED      80 CALLS          81 TOTAL
-                     EDM=1.26246e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+
+Energy spectrum - some additional statistics:
+Number of events:     7786 (inside=7786, outside=0)
+Avg. measured energy: 124032 keV
+
+ FCN=28.0484 FROM MIGRAD    STATUS=CONVERGED      82 CALLS          83 TOTAL
+                     EDM=1.20328e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
   EXT PARAMETER                                   STEP         FIRST   
   NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     1.75036e+02   3.56235e+00   1.07704e-02  -1.06055e-05
-   2  Mean         1.67511e+05   1.30594e+03   2.28523e+00  -7.81654e-07
-   3  Sigma        3.14751e+04   8.16722e+02   1.79604e-05   1.20912e-02
+   1  Constant     1.53192e+02   3.35357e+00   1.02626e-02   2.74004e-05
+   2  Mean         1.68803e+05   1.54965e+03   2.42548e+00  -5.03253e-08
+   3  Sigma        3.09499e+04   9.21700e+02   1.98427e-05  -9.49446e-02
                                ERR DEF= 0.5
 
 Some statistics: 
 
-Analyzed pair events:        4968
-Pair events in histogram:    3654 (73.5507%)
+Analyzed pair events:        7786
+Pair events in histogram:    7786 (100%)
 
-0.68% containment: 1.7
-
-Some statistics: 
-
-Analyzed pair events:        4968
-Pair events in histogram:    3455 (69.5451%)
-
-0.68% containment: 1.56
+0.68% containment: 6.3
 
 Some statistics: 
 
-Analyzed pair events:        4968
-Pair events in histogram:    2331 (46.9203%)
+Analyzed pair events:        7786
+Pair events in histogram:    5784 (74.2872%)
 
-0.68% containment: 0.8658
+0.68% containment: 1.9
+
+Some statistics: 
+
+Analyzed pair events:        7786
+Pair events in histogram:    3960 (50.8605%)
+
+0.68% containment: 1.0355

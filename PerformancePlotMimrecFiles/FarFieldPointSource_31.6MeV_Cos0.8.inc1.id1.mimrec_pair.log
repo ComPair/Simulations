@@ -31,56 +31,41 @@ Energy spectrum - some additional statistics:
 Number of events:     13334 (inside=13334, outside=0)
 Avg. measured energy: 20955 keV
 
- FCN=278.936 FROM MIGRAD    STATUS=CONVERGED      78 CALLS          79 TOTAL
-                     EDM=5.10869e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+ FCN=182.025 FROM MIGRAD    STATUS=CONVERGED      80 CALLS          81 TOTAL
+                     EDM=4.34002e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
   EXT PARAMETER                                   STEP         FIRST   
   NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     3.69222e+02   5.54832e+00   4.88213e-02   1.59000e-04
-   2  Mean         2.57144e+04   5.14905e+01   5.24080e-01   2.45913e-06
-   3  Sigma        3.21709e+03   5.10917e+01   4.78618e-05   6.26020e-02
+   1  Constant     3.82964e+02   6.22670e+00   4.56056e-02   1.08851e-04
+   2  Mean         2.65437e+04   5.03114e+01   3.70989e-01   3.97603e-06
+   3  Sigma        2.54677e+03   4.47846e+01   4.04044e-05   1.35632e-01
                                ERR DEF= 0.5
- FCN=201.528 FROM MIGRAD    STATUS=CONVERGED      80 CALLS          81 TOTAL
-                     EDM=2.00523e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+ FCN=128.697 FROM MIGRAD    STATUS=CONVERGED      79 CALLS          80 TOTAL
+                     EDM=3.40657e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
   EXT PARAMETER                                   STEP         FIRST   
   NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     3.80822e+02   6.08928e+00   4.66905e-02   8.07237e-06
-   2  Mean         2.63804e+04   5.10659e+01   4.01785e-01   3.98579e-07
-   3  Sigma        2.67063e+03   4.63215e+01   3.78739e-05   3.28531e-03
+   1  Constant     3.83832e+02   6.77990e+00   4.37261e-02   3.22816e-05
+   2  Mean         2.72113e+04   5.81529e+01   2.93317e-01   2.25390e-06
+   3  Sigma        2.09010e+03   4.50673e+01   3.26449e-05   2.25919e-02
                                ERR DEF= 0.5
- FCN=157.369 FROM MIGRAD    STATUS=CONVERGED      82 CALLS          83 TOTAL
-                     EDM=1.0362e-11    STRATEGY= 1      ERROR MATRIX ACCURATE 
+ FCN=128.697 FROM MIGRAD    STATUS=CONVERGED      42 CALLS          43 TOTAL
+                     EDM=8.12706e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
   EXT PARAMETER                                   STEP         FIRST   
   NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     3.85453e+02   6.44974e+00   4.46356e-02   2.42833e-07
-   2  Mean         2.68021e+04   5.23673e+01   3.35243e-01  -4.27585e-08
-   3  Sigma        2.35882e+03   4.43787e+01   3.22316e-05  -4.49915e-04
-                               ERR DEF= 0.5
- FCN=137.244 FROM MIGRAD    STATUS=CONVERGED      71 CALLS          72 TOTAL
-                     EDM=2.162e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
-  EXT PARAMETER                                   STEP         FIRST   
-  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     3.85428e+02   6.66610e+00   4.39527e-02   7.07710e-05
-   2  Mean         2.70652e+04   5.60835e+01   3.06398e-01   7.86402e-06
-   3  Sigma        2.18166e+03   4.48190e+01   2.97029e-05   5.78646e-02
+   1  Constant     3.83831e+02   6.77988e+00   4.37124e-02   6.99236e-06
+   2  Mean         2.72113e+04   5.81529e+01   2.93385e-01  -8.93341e-07
+   3  Sigma        2.09010e+03   4.50671e+01   3.26574e-05  -1.07987e-02
                                ERR DEF= 0.5
 
 Some statistics: 
 
-Analyzed pair events:        6691
-Pair events in histogram:    5184 (77.4772%)
+Analyzed pair events:        13334
+Pair events in histogram:    11582 (86.8607%)
 
-0.68% containment: 4.5
-
-Some statistics: 
-
-Analyzed pair events:        6691
-Pair events in histogram:    4807 (71.8428%)
-
-0.68% containment: 4.02
+0.68% containment: 6.75
 
 Some statistics: 
 
-Analyzed pair events:        6691
-Pair events in histogram:    3264 (48.7819%)
+Analyzed pair events:        13334
+Pair events in histogram:    7954 (59.652%)
 
-0.68% containment: 2.58
+0.68% containment: 3.40875
