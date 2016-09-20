@@ -1,8 +1,3 @@
-FarFieldPointSource_0.1MeV_Cos0.6.inc1.id1.sim:ID 100000 254315675
-FarFieldPointSource_0.1MeV_Cos0.7.inc1.id1.sim:ID 100000 251416274
-FarFieldPointSource_0.1MeV_Cos0.8.inc1.id1.sim:ID 100000 244996541
-FarFieldPointSource_0.1MeV_Cos0.9.inc1.id1.sim:ID 100000 235165823
-FarFieldPointSource_0.1MeV_Cos1.inc1.id1.sim:ID 100000 231399528
 FarFieldPointSource_0.3MeV_Cos0.5.inc1.id1.sim:ID 100000 216864097
 FarFieldPointSource_0.3MeV_Cos0.6.inc1.id1.sim:ID 100000 216606877
 FarFieldPointSource_0.3MeV_Cos0.7.inc1.id1.sim:ID 100000 215369087
