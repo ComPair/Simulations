@@ -62,11 +62,17 @@
 ./FarFieldPointSource_1.584MeV_Cos0.8.inc1.id1.sim 100000.0 109456115.0
 ./FarFieldPointSource_1.584MeV_Cos0.9.inc1.id1.sim 100000.0 104445642.0
 ./FarFieldPointSource_5.011MeV_Cos0.7.inc1.id1.sim 100000.0 65664600.0
+./FarFieldPointSource_316.227MeV_Cos1.0.inc1.id1.sim 100000.0 14783267.0
 ./FarFieldPointSource_5.011MeV_Cos0.8.inc1.id1.sim 100000.0 62779403.0
 ./FarFieldPointSource_1.584MeV_Cos1.0.inc1.id1.sim 100000.0 99916245.0
 ./FarFieldPointSource_5.011MeV_Cos0.9.inc1.id1.sim 100000.0 59557185.0
 ./FarFieldPointSource_10.000MeV_Cos0.7.inc1.id1.sim 100000.0 43701190.0
 ./FarFieldPointSource_10.000MeV_Cos0.8.inc1.id1.sim 100000.0 41681520.0
 ./FarFieldPointSource_5.011MeV_Cos1.0.inc1.id1.sim 100000.0 58304983.0
+./FarFieldPointSource_316.227MeV_Cos0.6.inc1.id1.sim 100000.0 14022002.0
+./FarFieldPointSource_316.227MeV_Cos0.7.inc1.id1.sim 100000.0 14404371.0
+./FarFieldPointSource_316.227MeV_Cos0.8.inc1.id1.sim 100000.0 14731589.0
+./FarFieldPointSource_316.227MeV_Cos0.9.inc1.id1.sim 100000.0 14832930.0
+./FarFieldPointSource_316.227MeV_Cos0.5.inc1.id1.sim 100000.0 13742189.0
 ./FarFieldPointSource_10.000MeV_Cos0.9.inc1.id1.sim 100000.0 40009720.0
 ./FarFieldPointSource_10.000MeV_Cos1.0.inc1.id1.sim 100000.0 39590984.0
