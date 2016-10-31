@@ -1,0 +1,71 @@
+Type      tra
+Version   1
+Geometry  /data/slag2/ComPair/src/Geometry/TowerModel/CompairBase.geo.setup
+
+Date      2016-10-30 15:29:38
+MEGAlib   2.31.00
+
+EN
+
+TE 0.086016700
+
+
+FT START
+
+---------------------------------------------------------------------------
+
+# Tracked events file options
+# Date 2016-10-30 15:32:13
+# OriginalFile /data/slag2/ComPair/Simulations/AMEGO_20161028/./FarFieldPointSource_1.000MeV_Cos0.9.inc1.id1.sim
+# GeometryFile /data/slag2/ComPair/src/Geometry/TowerModel/CompairBase.geo.setup
+# 
+# Clusterizer options:
+# 
+# Clusterizing by adjacent voxels
+# Level: 2
+# Sigma: 3
+# 
+# 
+# Tracking - Rank options:
+# 
+# Search MIPs:                  1
+# Search Pairs:                 1
+# Search Comptons:              1
+# Max. number of ambiguities:   5
+# Max. layer jump Compton:      1
+# Number of sequences to keep:  1
+# Reject pure ambiguities:      0
+# 
+# 
+# CSR Chi-Square options:
+# 
+# Test statistics:                 0
+# QualityFactorMin:                0
+# QualityFactorMax:                1000
+# MaxNInteractions:                7
+# UseComptelTypeEvents:            1
+# AssumeD1First:                   0
+# UndecidedHandling:               1
+# GuaranteeStartD1:                1
+# RejectOneDetectorTypeOnlyEvents: 0
+# 
+
+----------------------------------------------------------------------------
+
+Trigger statistics:
+  Not triggered events: ..................................  99262
+  Number of vetoed events: ...............................    738
+    MainVetoTop: .........................................    738
+  Number of triggered events: ............................      0
+
+----------------------------------------------------------------------------
+
+Event statistics for all triggered (!) events:
+
+  No events available
+
+----------------------------------------------------------------------------
+
+
+FT STOP
+
