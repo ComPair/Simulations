@@ -1,0 +1,12 @@
+# Partial beam file for cosima
+
+# Albedo neutrons determinined after Morris 1995 & Kole 2014
+# Assumptions: 
+# * Use the Morris absolute flux value @ 150 MeV and the shape of Kole 
+# * Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+SpaceSim.Source AlbedoNeutronsMorrisKole
+AlbedoNeutronsMorrisKole.ParticleType           6
+AlbedoNeutronsMorrisKole.Beam                   FarFieldFileZenithDependent AlbedoNeutronsMorrisKole.beam.dat
+AlbedoNeutronsMorrisKole.Spectrum               File AlbedoNeutronsMorrisKole.spectrum.dat
+AlbedoNeutronsMorrisKole.Flux                   0.480224
+
