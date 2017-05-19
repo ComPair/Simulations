@@ -14,7 +14,7 @@ DiscretizeHits                       true
  
 Run SpaceSim
 SpaceSim.FileName         AlbedoPhotonsAjelloMizuno
-SpaceSim.Time             1.0
+SpaceSim.Time             1000
 # Partial beam file for cosima
 
 # Albedo photons determinined after Ajello 2008 & Mizuno 2004

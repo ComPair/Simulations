@@ -14,7 +14,7 @@ DiscretizeHits                       true
  
 Run SpaceSim
 SpaceSim.FileName         AlbedoElectronsAlcarazMizuno
-SpaceSim.Time             1.0
+SpaceSim.Time             1000
 # Partial beam file for cosima
 
 # Albedo electrons determinined after Alcaraz 2000 & Mizuno 2004

@@ -14,7 +14,7 @@ DiscretizeHits                       true
  
 Run SpaceSim
 SpaceSim.FileName         CosmicAlphasSpenvis
-SpaceSim.Time             1.0
+SpaceSim.Time             1000
 # Partial beam file for cosima
 
 # Cosmic alpha particles using SPENVIS
