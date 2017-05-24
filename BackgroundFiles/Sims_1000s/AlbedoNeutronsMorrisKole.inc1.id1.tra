@@ -1,0 +1,55 @@
+Type      tra
+Version   1
+Geometry  /data/slag2/ComPair/src/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+Date      2017-05-22 14:48:19
+MEGAlib   2.32.80
+
+EN
+
+TE 1000.000000000
+
+
+FT START
+
+---------------------------------------------------------------------------
+
+# Tracked events file options
+# Date 2017-05-22 14:48:19
+# OriginalFile /data/slag2/jracusin/AMEGO/Simulations/BackgroundFiles/backgrounds_notrapped/./AlbedoNeutronsMorrisKole.inc1.id1.sim
+# GeometryFile /data/slag2/ComPair/src/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+# 
+# Clusterizer options:
+# 
+# Clusterizing by adjacent voxels
+# Level: 2
+# Sigma: -1
+# 
+# 
+# CSR Chi-Square options:
+# 
+# Test statistics:                 0
+# QualityFactorMin:                0
+# QualityFactorMax:                1000
+# MaxNInteractions:                5
+# UseComptelTypeEvents:            1
+# AssumeD1First:                   0
+# UndecidedHandling:               0
+# GuaranteeStartD1:                0
+# RejectOneDetectorTypeOnlyEvents: 0
+# 
+
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+
+Event statistics for all triggered (!) events:
+
+  No events available
+
+----------------------------------------------------------------------------
+
+
+FT STOP
+

@@ -1,0 +1,323 @@
+Type      tra
+Version   1
+Geometry  /data/slag2/ComPair/src/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+Date      2017-05-22 14:48:19
+MEGAlib   2.32.80
+
+SE
+ET UN
+ID 12
+TI 9.371612479
+BD TooManyHitsInCSR
+PE 104857
+SE
+ET UN
+ID 47
+TI 33.643288519
+BD TooManyHitsInCSR
+PE 362182
+SE
+ET UN
+ID 77
+TI 48.354001729
+BD TooManyHitsInCSR
+PE 1486.59
+SE
+ET UN
+ID 81
+TI 50.018338739
+BD TooManyHitsInCSR
+PE 148937
+SE
+ET UN
+ID 177
+TI 127.945002880
+BD TooManyHitsInCSR
+PE 9187.56
+SE
+ET UN
+ID 194
+TI 143.667286982
+BD TooManyHitsInCSR
+PE 176876
+SE
+ET UN
+ID 214
+TI 160.026382846
+BD TooManyHitsInCSR
+PE 855977
+SE
+ET UN
+ID 254
+TI 190.891349165
+BD TooManyHitsInCSR
+PE 1746.65
+SE
+ET CO
+ID 287
+TI 217.187735391
+SQ 4
+CT 0.0363477 0.234447
+TL 1
+TE 25.1971
+CE 472.613 10.9304   25.1971 3.61097
+CD 11.5375 -19.7875 45.75   0.00721688 0.00721688 0.00721688   -4.58333 -42.5 1.41667   0.23094 1.1547 0.23094   0 0 0   0 0 0
+LA 12.2114
+SE
+ET UN
+ID 307
+TI 231.758798100
+BD TooManyHitsInCSR
+PE 640744
+SE
+ET UN
+ID 309
+TI 233.749561902
+BD TooManyHitsInCSR
+PE 11888.5
+SE
+ET UN
+ID 363
+TI 270.948537529
+BD TooManyHitsInCSR
+PE 2782.94
+SE
+ET UN
+ID 479
+TI 358.358061958
+BD TooManyHitsInCSR
+PE 65787.3
+SE
+ET UN
+ID 481
+TI 359.898532900
+BD TooManyHitsInCSR
+PE 844264
+SE
+ET UN
+ID 485
+TI 361.591896783
+BD TooManyHitsInCSR
+PE 1939.82
+SE
+ET UN
+ID 543
+TI 413.817141814
+BD TooManyHitsInCSR
+PE 10339.7
+SE
+ET UN
+ID 554
+TI 424.927536217
+BD TooManyHitsInCSR
+PE 587244
+SE
+ET UN
+ID 566
+TI 434.409418554
+BD TooManyHitsInCSR
+PE 795554
+SE
+ET UN
+ID 578
+TI 441.007686899
+BD TooManyHitsInCSR
+PE 286642
+SE
+ET UN
+ID 682
+TI 525.257422756
+BD TooManyHitsInCSR
+PE 734329
+SE
+ET CO
+ID 684
+TI 525.988048874
+SQ 5
+CT 0.316586 0.352383
+TL 1
+TE 2204.48
+CE 1746.13 14.1576   2204.48 33.1813
+CD 42.5 2.91666 1.41667   1.1547 0.23094 0.23094   42.5 -19.5833 12.25   1.1547 0.23094 0.23094   0 0 0   0 0 0
+LA 12.6106
+SE
+ET UN
+ID 765
+TI 586.869428166
+BD TooManyHitsInCSR
+PE 797901
+SE
+ET UN
+ID 780
+TI 605.771359570
+BD TooManyHitsInCSR
+PE 164950
+SE
+ET UN
+ID 799
+TI 624.474380583
+BD TooManyHitsInCSR
+PE 494969
+SE
+ET UN
+ID 834
+TI 642.114924811
+BD TooManyHitsInCSR
+PE 11187.2
+SE
+ET UN
+ID 882
+TI 694.817580209
+BD TooManyHitsInCSR
+PE 317174
+SE
+ET UN
+ID 895
+TI 710.017726670
+BD TooManyHitsInCSR
+PE 85999.9
+SE
+ET UN
+ID 937
+TI 746.710178896
+BD TooManyHitsInCSR
+PE 348604
+SE
+ET UN
+ID 952
+TI 760.543367886
+BD TooManyHitsInCSR
+PE 6113.95
+SE
+ET UN
+ID 993
+TI 795.077700864
+BD TooManyHitsInCSR
+PE 779962
+SE
+ET UN
+ID 1017
+TI 809.419979715
+BD TooManyHitsInCSR
+PE 319824
+SE
+ET UN
+ID 1043
+TI 827.911591774
+BD TooManyHitsInCSR
+PE 87286.1
+SE
+ET UN
+ID 1044
+TI 829.247874633
+BD TooManyHitsInCSR
+PE 4668.58
+SE
+ET UN
+ID 1088
+TI 871.065173028
+BD TooManyHitsInCSR
+PE 778836
+SE
+ET UN
+ID 1097
+TI 880.301293919
+BD TooManyHitsInCSR
+PE 114720
+SE
+ET UN
+ID 1100
+TI 885.026026267
+BD TooManyHitsInCSR
+PE 9003.15
+SE
+ET UN
+ID 1149
+TI 928.665631618
+BD TooManyHitsInCSR
+PE 212243
+SE
+ET UN
+ID 1156
+TI 935.303161503
+BD TooManyHitsInCSR
+PE 13786.5
+SE
+ET UN
+ID 1161
+TI 939.073517563
+BD TooManyHitsInCSR
+PE 585764
+SE
+ET UN
+ID 1199
+TI 965.934540125
+BD TooManyHitsInCSR
+PE 447375
+EN
+
+TE 1000.000000000
+
+
+FT START
+
+---------------------------------------------------------------------------
+
+# Tracked events file options
+# Date 2017-05-22 14:52:53
+# OriginalFile /data/slag2/jracusin/AMEGO/Simulations/BackgroundFiles/backgrounds_notrapped/./CosmicPositronsMizuno.inc1.id1.sim
+# GeometryFile /data/slag2/ComPair/src/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+# 
+# Clusterizer options:
+# 
+# Clusterizing by adjacent voxels
+# Level: 2
+# Sigma: -1
+# 
+# 
+# CSR Chi-Square options:
+# 
+# Test statistics:                 0
+# QualityFactorMin:                0
+# QualityFactorMax:                1000
+# MaxNInteractions:                5
+# UseComptelTypeEvents:            1
+# AssumeD1First:                   0
+# UndecidedHandling:               0
+# GuaranteeStartD1:                0
+# RejectOneDetectorTypeOnlyEvents: 0
+# 
+
+----------------------------------------------------------------------------
+
+Trigger statistics:
+  Not triggered events: ..................................    562
+  Number of vetoed events: ...............................    439
+    MainVetoSide: ........................................    131
+    MainVetoTop: .........................................    308
+  Number of triggered events: ............................    242
+    MainTriggerCZTSide: ..................................      9
+    MainTriggerCsI: ......................................    233
+
+----------------------------------------------------------------------------
+
+Event statistics for all triggered (!) events:
+  Number of events .......................................    242 (100.000%)
+  Number of events, which passed event selections ........     40 ( 16.529%)
+  Reconstructable events .................................      2 (  0.826%)
+       Single-site  ......................................      0 (  0.000%)
+       Compton  ..........................................      2 (100.000%)
+           Decay  ........................................      0 (  0.000%)
+       Pair  .............................................      0 (  0.000%)
+       Muon  .............................................      0 (  0.000%)
+
+Rejection reasons for not reconstructable events:
+  Too many hits in CSR ...................................     38
+    Total ................................................     38
+
+----------------------------------------------------------------------------
+
+
+FT STOP
+
