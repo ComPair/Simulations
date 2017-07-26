@@ -1,0 +1,156 @@
+# Partial beam file for cosima
+
+# Albedo electrons determinined after Alcaraz 2000 & Mizuno 2004
+# Assumptions: 
+# * Only valid near the equator! 
+# * Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+SpaceSim.Source AlbedoElectronsAlcarazMizuno
+AlbedoElectronsAlcarazMizuno.ParticleType           3
+AlbedoElectronsAlcarazMizuno.Beam                   FarFieldFileZenithDependent AlbedoElectronsAlcarazMizuno.beam.dat
+AlbedoElectronsAlcarazMizuno.Spectrum               File AlbedoElectronsAlcarazMizuno.spectrum.dat
+AlbedoElectronsAlcarazMizuno.Flux                   0.0442615
+
+# Partial beam file for cosima
+
+# Albedo neutrons determinined after Morris 1995 & Kole 2014
+# Assumptions: 
+# * Use the Morris absolute flux value @ 150 MeV and the shape of Kole 
+# * Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+SpaceSim.Source AlbedoNeutronsMorrisKole
+AlbedoNeutronsMorrisKole.ParticleType           6
+AlbedoNeutronsMorrisKole.Beam                   FarFieldFileZenithDependent AlbedoNeutronsMorrisKole.beam.dat
+AlbedoNeutronsMorrisKole.Spectrum               File AlbedoNeutronsMorrisKole.spectrum.dat
+AlbedoNeutronsMorrisKole.Flux                   0.480224
+
+# Partial beam file for cosima
+
+# Albedo photons determinined after Ajello 2008 & Mizuno 2004
+# Assumptions: 
+# (1) Use Ajello below 1 MeV, Mizuno above 
+# (2) Geomegnetic cutoff difference scaled as in Mizuno 
+# (3) Ajello normalized to Mizuno 
+# (4) Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+SpaceSim.Source AlbedoPhotonsAjelloMizuno
+AlbedoPhotonsAjelloMizuno.ParticleType           1
+AlbedoPhotonsAjelloMizuno.Beam                   FarFieldFileZenithDependent AlbedoPhotonsAjelloMizuno.beam.dat
+AlbedoPhotonsAjelloMizuno.Spectrum               File AlbedoPhotonsAjelloMizuno.spectrum.dat
+AlbedoPhotonsAjelloMizuno.Flux                   1.54972
+
+# Partial beam file for cosima
+
+# Albedo positrons determinined after Alcaraz 2000 & Mizuno 2004
+# Assumptions: 
+# * Don't remember... 
+# * Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+SpaceSim.Source AlbedoPositronsAlcarazMizuno
+AlbedoPositronsAlcarazMizuno.ParticleType           2
+AlbedoPositronsAlcarazMizuno.Beam                   FarFieldFileZenithDependent AlbedoPositronsAlcarazMizuno.beam.dat
+AlbedoPositronsAlcarazMizuno.Spectrum               File AlbedoPositronsAlcarazMizuno.spectrum.dat
+AlbedoPositronsAlcarazMizuno.Flux                   0.147391
+
+# Partial beam file for cosima
+
+# Albedo proton spectrum upward and downward component combined and averaged determinined after Alcaraz 2000
+# Assumptions: 
+# * Equatorial low-earth orbit 
+# * Angular distribution is isotropic 
+SpaceSim.Source AlbedoProtonAlcaraz
+AlbedoProtonAlcaraz.ParticleType           4
+AlbedoProtonAlcaraz.Beam                   FarFieldFileZenithDependent AlbedoProtonAlcaraz.beam.dat
+AlbedoProtonAlcaraz.Spectrum               File AlbedoProtonAlcaraz.spectrum.dat
+AlbedoProtonAlcaraz.Flux                   0.0590699
+
+# Partial beam file for cosima
+
+# Annihilation line determined after Harris, JGR v.108, 2003
+# Assumptions: Average geomagnetic cut-off > 11 GV 
+#              Average SMM altitude 500 
+SpaceSim.Source AnnihilationLineHarris
+AnnihilationLineHarris.ParticleType           1
+AnnihilationLineHarris.Beam                   FarFieldFileZenithDependent AnnihilationLineHarris.beam.dat
+AnnihilationLineHarris.Spectrum               Mono 511
+AnnihilationLineHarris.Flux                   0.0171645
+
+# Partial beam file for cosima
+
+# Cosmic alpha particles using SPENVIS
+# Assumptions: 
+# * log-log extrapolation beyond upper energy limit from SPENVIS
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicAlphasSpenvis
+CosmicAlphasSpenvis.ParticleType           21
+CosmicAlphasSpenvis.Beam                   FarFieldFileZenithDependent CosmicAlphasSpenvis.beam.dat
+CosmicAlphasSpenvis.Spectrum               File CosmicAlphasSpenvis.spectrum.dat
+CosmicAlphasSpenvis.Flux                   0.0655951
+
+# Partial beam file for cosima
+
+# Cosmic electrons after Mizuno 2004
+# Assumptions: 
+# * Solar modulation has been ignored! 
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicElectronsMizuno
+CosmicElectronsMizuno.ParticleType           3
+CosmicElectronsMizuno.Beam                   FarFieldFileZenithDependent CosmicElectronsMizuno.beam.dat
+CosmicElectronsMizuno.Spectrum               File CosmicElectronsMizuno.spectrum.dat
+CosmicElectronsMizuno.Flux                   0.00118309
+
+# Partial beam file for cosima
+
+SpaceSim.Source CosmicPhotonsGruber
+CosmicPhotonsGruber.ParticleType           1
+CosmicPhotonsGruber.Beam                   FarFieldFileZenithDependent CosmicPhotonsGruber.beam.dat
+CosmicPhotonsGruber.Spectrum               File CosmicPhotonsGruber.spectrum.dat
+CosmicPhotonsGruber.Flux                   34.5885
+
+# Partial beam file for cosima
+
+# Cosmic positrons after Mizuno 2004
+# Assumptions: 
+# * Solar modulation has been ignored! 
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicPositronsMizuno
+CosmicPositronsMizuno.ParticleType           2
+CosmicPositronsMizuno.Beam                   FarFieldFileZenithDependent CosmicPositronsMizuno.beam.dat
+CosmicPositronsMizuno.Spectrum               File CosmicPositronsMizuno.spectrum.dat
+CosmicPositronsMizuno.Flux                   0.000100107
+
+# Partial beam file for cosima
+
+# Cosmic protons using SPENVIS
+# Assumptions: 
+# * log-log extrapolation beyond upper energy limit from SPENVIS
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicProtonsSpenvis
+CosmicProtonsSpenvis.ParticleType           4
+CosmicProtonsSpenvis.Beam                   FarFieldFileZenithDependent CosmicProtonsSpenvis.beam.dat
+CosmicProtonsSpenvis.Spectrum               File CosmicProtonsSpenvis.spectrum.dat
+CosmicProtonsSpenvis.Flux                   0.103724
+
+# Partial beam file for cosima
+
+# Trapped electron particles using SPENVIS
+# Assumptions: 
+# * The values are orbit averaged. 
+# * DO NOT include in normal background calculations since we are OFF during SAA passages.
+# * Angular distribution is assumed isotropic 
+SpaceSim.Source TrappedElectronsSpenvis
+TrappedElectronsSpenvis.ParticleType           3
+TrappedElectronsSpenvis.Beam                   FarFieldFileZenithDependent TrappedElectronsSpenvis.beam.dat
+TrappedElectronsSpenvis.Spectrum               File TrappedElectronsSpenvis.spectrum.dat
+TrappedElectronsSpenvis.Flux                   516.905
+
+# Partial beam file for cosima
+
+# Trapped protons particles using SPENVIS
+# Assumptions: 
+# * The values are orbit averaged - thus do NOT simulate alongside other hadrons: 
+#   Since we are OFF during SAA passages, do a separate simulation of the trapped protons 
+#   and then just include the activations not the prompt decays for normal background calculations. 
+# * Angular distribution is assumed isotropic 
+SpaceSim.Source TrappedProtonsSpenvis
+TrappedProtonsSpenvis.ParticleType           4
+TrappedProtonsSpenvis.Beam                   FarFieldFileZenithDependent TrappedProtonsSpenvis.beam.dat
+TrappedProtonsSpenvis.Spectrum               File TrappedProtonsSpenvis.spectrum.dat
+TrappedProtonsSpenvis.Flux                   741.249
+

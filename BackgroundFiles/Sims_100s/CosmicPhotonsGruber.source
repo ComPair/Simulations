@@ -1,0 +1,26 @@
+# Compute Background Run for Cosima
+# A background source at the zenith
+Version          1
+Geometry         /data/slag2/ComPair/src/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+CheckForOverlaps 1000 0.01
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+ 
+Run SpaceSim
+SpaceSim.FileName         CosmicPhotonsGruber
+SpaceSim.Time             100
+# Partial beam file for cosima
+
+SpaceSim.Source CosmicPhotonsGruber
+CosmicPhotonsGruber.ParticleType           1
+CosmicPhotonsGruber.Beam                   FarFieldFileZenithDependent CosmicPhotonsGruber.beam.dat
+CosmicPhotonsGruber.Spectrum               File CosmicPhotonsGruber.spectrum.dat
+CosmicPhotonsGruber.Flux                   34.5885
+
+

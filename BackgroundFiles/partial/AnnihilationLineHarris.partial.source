@@ -1,0 +1,11 @@
+# Partial beam file for cosima
+
+# Annihilation line determined after Harris, JGR v.108, 2003
+# Assumptions: Average geomagnetic cut-off > 11 GV 
+#              Average SMM altitude 500 
+SpaceSim.Source AnnihilationLineHarris
+AnnihilationLineHarris.ParticleType           1
+AnnihilationLineHarris.Beam                   FarFieldFileZenithDependent AnnihilationLineHarris.beam.dat
+AnnihilationLineHarris.Spectrum               Mono 511
+AnnihilationLineHarris.Flux                   0.0171645
+

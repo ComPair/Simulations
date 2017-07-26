@@ -1,0 +1,12 @@
+# Partial beam file for cosima
+
+# Cosmic electrons after Mizuno 2004
+# Assumptions: 
+# * Solar modulation has been ignored! 
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicElectronsMizuno
+CosmicElectronsMizuno.ParticleType           3
+CosmicElectronsMizuno.Beam                   FarFieldFileZenithDependent CosmicElectronsMizuno.beam.dat
+CosmicElectronsMizuno.Spectrum               File CosmicElectronsMizuno.spectrum.dat
+CosmicElectronsMizuno.Flux                   0.00118309
+
