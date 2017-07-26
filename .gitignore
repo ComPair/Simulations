@@ -30,3 +30,9 @@ RunTestSky.inc2.id1.sim
 MyComPair_Tower.inc1.id1.tra
 
 Cosima.log
+
+*.log
+
+*.png
+
+AMEGOPerformancePlotSourceFiles/TriggerEfficiency.txt
