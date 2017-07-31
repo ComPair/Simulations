@@ -13,14 +13,18 @@ StoreSimulationInfoIonization        false
 DiscretizeHits                       true
  
 Run SpaceSim
-SpaceSim.FileName         CosmicPhotonsGruber
+SpaceSim.FileName         AlbedoProtonMizuno
 SpaceSim.Time             1000
 # Partial beam file for cosima
 
-SpaceSim.Source CosmicPhotonsGruber
-CosmicPhotonsGruber.ParticleType           1
-CosmicPhotonsGruber.Beam                   FarFieldFileZenithDependent CosmicPhotonsGruber.beam.dat
-CosmicPhotonsGruber.Spectrum               File CosmicPhotonsGruber.spectrum.dat
-CosmicPhotonsGruber.Flux                   1.56243
+# Albedo proton spectrum upward and downward component combined and averaged determinined after Mizuno 2004
+# Assumptions: 
+# * Equatorial low-earth orbit 
+# * Angular distribution is isotropic 
+SpaceSim.Source AlbedoProtonMizuno
+AlbedoProtonMizuno.ParticleType           4
+AlbedoProtonMizuno.Beam                   FarFieldFileZenithDependent AlbedoProtonMizuno.beam.dat
+AlbedoProtonMizuno.Spectrum               File AlbedoProtonMizuno.spectrum.dat
+AlbedoProtonMizuno.Flux                   0.159324
 
 

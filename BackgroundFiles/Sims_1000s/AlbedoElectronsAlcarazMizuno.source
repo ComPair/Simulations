@@ -25,6 +25,6 @@ SpaceSim.Source AlbedoElectronsAlcarazMizuno
 AlbedoElectronsAlcarazMizuno.ParticleType           3
 AlbedoElectronsAlcarazMizuno.Beam                   FarFieldFileZenithDependent AlbedoElectronsAlcarazMizuno.beam.dat
 AlbedoElectronsAlcarazMizuno.Spectrum               File AlbedoElectronsAlcarazMizuno.spectrum.dat
-AlbedoElectronsAlcarazMizuno.Flux                   0.0442615
+AlbedoElectronsAlcarazMizuno.Flux                   0.0442699
 
 

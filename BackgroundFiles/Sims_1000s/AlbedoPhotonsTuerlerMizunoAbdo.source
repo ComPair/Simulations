@@ -1,0 +1,36 @@
+# Compute Background Run for Cosima
+# A background source at the zenith
+Version          1
+Geometry         /data/slag2/ComPair/src/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+CheckForOverlaps 1000 0.01
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+ 
+Run SpaceSim
+SpaceSim.FileName         AlbedoPhotonsTuerlerMizunoAbdo
+SpaceSim.Time             1000
+# Partial beam file for cosima
+
+# Albedo photons determinined after Turler+ 2010, Mizuno+ 2004, Abdo+ 2009
+# Assumptions: 
+# (1) Use Tuerler below 750 keV, Abdo+ above 200 MeV, Mizuno in between 
+# (2) Everything is normalized to Mizuno 
+# (3) Geomagnetic cutoff difference scaled as in Mizuno 
+# (4) Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+# (5) Tuerler includes the reflected CXB component, not just the Albedo component thus is larger at lower energies than Ajello 
+# (6) The lower energy limit is ~20 keV 
+# (7) Limb brightening and darkening is NOT included
+# (8) There should be a bump form the 511-keV-Compton scatters belog ~450 keV which is NOT included 
+SpaceSim.Source AlbedoPhotonsTuerlerMizunoAbdo
+AlbedoPhotonsTuerlerMizunoAbdo.ParticleType           1
+AlbedoPhotonsTuerlerMizunoAbdo.Beam                   FarFieldFileZenithDependent AlbedoPhotonsTuerlerMizunoAbdo.beam.dat
+AlbedoPhotonsTuerlerMizunoAbdo.Spectrum               File AlbedoPhotonsTuerlerMizunoAbdo.spectrum.dat
+AlbedoPhotonsTuerlerMizunoAbdo.Flux                   0.717496
+
+
