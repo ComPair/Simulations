@@ -10,5 +10,5 @@ SpaceSim.Source TrappedProtonsSpenvis
 TrappedProtonsSpenvis.ParticleType           4
 TrappedProtonsSpenvis.Beam                   FarFieldFileZenithDependent TrappedProtonsSpenvis.beam.dat
 TrappedProtonsSpenvis.Spectrum               File TrappedProtonsSpenvis.spectrum.dat
-TrappedProtonsSpenvis.Flux                   741.249
+TrappedProtonsSpenvis.Flux                   566.019
 

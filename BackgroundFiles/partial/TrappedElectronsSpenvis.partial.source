@@ -9,5 +9,5 @@ SpaceSim.Source TrappedElectronsSpenvis
 TrappedElectronsSpenvis.ParticleType           3
 TrappedElectronsSpenvis.Beam                   FarFieldFileZenithDependent TrappedElectronsSpenvis.beam.dat
 TrappedElectronsSpenvis.Spectrum               File TrappedElectronsSpenvis.spectrum.dat
-TrappedElectronsSpenvis.Flux                   516.905
+TrappedElectronsSpenvis.Flux                   153.801
 

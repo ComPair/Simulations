@@ -1,8 +1,0 @@
-# Partial beam file for cosima
-
-SpaceSim.Source CosmicPhotonsGruber
-CosmicPhotonsGruber.ParticleType           1
-CosmicPhotonsGruber.Beam                   FarFieldFileZenithDependent CosmicPhotonsGruber.beam.dat
-CosmicPhotonsGruber.Spectrum               File CosmicPhotonsGruber.spectrum.dat
-CosmicPhotonsGruber.Flux                   34.5885
-

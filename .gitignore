@@ -29,10 +29,18 @@ RunTestSky.inc2.id1.sim
 
 MyComPair_Tower.inc1.id1.tra
 
+SolarFlare.inc3.id1.tra
+
 Cosima.log
 
 *.log
 
 *.png
+
+*.sim
+
+*.stderr.gz
+
+*.stdout.gz
 
 AMEGOPerformancePlotSourceFiles/TriggerEfficiency.txt

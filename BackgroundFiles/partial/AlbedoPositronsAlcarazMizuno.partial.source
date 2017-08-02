@@ -8,5 +8,5 @@ SpaceSim.Source AlbedoPositronsAlcarazMizuno
 AlbedoPositronsAlcarazMizuno.ParticleType           2
 AlbedoPositronsAlcarazMizuno.Beam                   FarFieldFileZenithDependent AlbedoPositronsAlcarazMizuno.beam.dat
 AlbedoPositronsAlcarazMizuno.Spectrum               File AlbedoPositronsAlcarazMizuno.spectrum.dat
-AlbedoPositronsAlcarazMizuno.Flux                   0.147391
+AlbedoPositronsAlcarazMizuno.Flux                   0.147419
 
