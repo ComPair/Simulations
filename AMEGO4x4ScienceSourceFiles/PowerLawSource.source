@@ -18,12 +18,12 @@ DiscretizeHits                       true
 
 Run SpaceSim
 SpaceSim.FileName         PowerLawSourceObservation
-SpaceSim.Time             10000.0
+SpaceSim.Time             1
 
 
 SpaceSim.Source PL
 PL.ParticleType           1
 PL.Beam                   FarFieldPointSource 0 0
-PL.Spectrum               PowerLaw 1000 10000000 1.85
-PL.Flux                   0.01
+PL.Spectrum               PowerLaw 100 10000 0
+PL.Flux                   1
 

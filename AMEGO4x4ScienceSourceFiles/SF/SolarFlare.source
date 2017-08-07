@@ -13,7 +13,7 @@ DiscretizeHits                       true
  
 Run SpaceSim
 SpaceSim.FileName         SolarFlare
-SpaceSim.Time             600
+SpaceSim.Time             10
 
 SpaceSim.Source SolarFlare
 SolarFlare.ParticleType           1
