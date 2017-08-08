@@ -1,0 +1,35 @@
+# Example run for Cosima
+# A Blazar source in the zenith
+
+# Peak energy: 0.744 MeV
+
+Version         1
+Geometry        $(MEGALIB)/resource/examples/geomega/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+
+
+Run SpaceSim
+SpaceSim.FileName         Observation_0222185_NoBG_10ks
+SpaceSim.Time             10000
+
+#5 hours
+# Attention: Concerning the lower energy band:
+# The analysis is planned to be performed above 1 MeV.
+# Therfore you set the lower energy limit for the simulation, well below this limit, 
+# to avoid problems due to energy resolution limitations
+
+SpaceSim.Source Blazar1
+Blazar1.ParticleType           1
+Blazar1.Beam                   FarFieldPointSource 0 0
+Blazar1.Spectrum               File Spectrum_0222185.dat
+# Energy integrated Blazar flux ph/cm2/s
+Blazar1.Flux                   0.0001707
