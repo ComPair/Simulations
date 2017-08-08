@@ -1,0 +1,27 @@
+# Template blazar source file for Cosima
+# A blazar source in the zenith
+
+
+Version         1
+Geometry        $(MEGALIB)/resource/examples/geomega/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+
+Run SpaceSim
+SpaceSim.FileName         Observation_Template
+SpaceSim.Time             10000
+
+SpaceSim.Source Blazar
+Blazar.ParticleType           1
+Blazar.Beam                   FarFieldPointSource 0 0
+Blazar.Spectrum               File Spectrum_template.dat
+# Energy integrated Blazar flux ph/cm2/s
+Blazar.Flux                   .00
