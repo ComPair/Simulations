@@ -1,0 +1,29 @@
+# Example run for Cosima
+# GRB090510 from GBM BGO at the zenith with observed GBM backgrounds
+
+
+Version         1
+Geometry        $COMPAIRPATH/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+
+
+Run SpaceSim
+SpaceSim.FileName         GRB090510
+SpaceSim.Time             1
+
+
+SpaceSim.Source GRB
+GRB.ParticleType           1
+GRB.Beam                   FarFieldPointSource 0 0
+GRB.Spectrum               File GRB090510_spectrum_BGO.dat
+GRB.Flux                   23
+GRB.LightCurve			   File True GRB090510_GBM_BGO.dat
