@@ -21,9 +21,9 @@ SpaceSim.FileName         GRB090510
 SpaceSim.Time             1
 
 
-SpaceSim.Source GRB
-GRB.ParticleType           1
-GRB.Beam                   FarFieldPointSource 0 0
-GRB.Spectrum               File GRB090510_spectrum_BGO.dat
-GRB.Flux                   23
-GRB.LightCurve			   File True GRB090510_GBM_BGO.dat
+SpaceSim.Source GRB090510
+GRB090510.ParticleType           1
+GRB090510.Beam                   FarFieldPointSource 0 0
+GRB090510.Spectrum               File GRB090510_spectrum_BGO.dat
+GRB090510.Flux                   23
+GRB090510.LightCurve			 File True GRB090510_GBM_BGO.dat
