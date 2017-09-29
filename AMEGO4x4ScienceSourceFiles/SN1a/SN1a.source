@@ -4,7 +4,7 @@
 # Peak energy: 250 keV
 
 Version         1
-Geometry        $(MEGALIB)/resource/examples/geomega/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+Geometry        $(COMPAIRPATH)/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
 
 # Physics list
 PhysicsListEM                        Livermore
@@ -18,11 +18,11 @@ DiscretizeHits                       true
 
 Run SpaceSim
 SpaceSim.FileName         Observation_SN1a
-SpaceSim.Time             1000.
+SpaceSim.Time             1000000.
 
-SpaceSim.Source Blazar1
-Blazar1.ParticleType           1
-Blazar1.Beam                   FarFieldPointSource 0 0
-Blazar1.Spectrum               File SN1a.spectrum.dat
+SpaceSim.Source SN1a
+SN1a.ParticleType           1
+SN1a.Beam                   FarFieldPointSource 0 0
+SN1a.Spectrum               File SN1a.spectrum.dat
 # Energy integrated Blazar flux ph/cm2/s NOTE: THIS IS MADE UP!
-Blazar1.Flux                   0.10
+SN1a.Flux                   0.000010
