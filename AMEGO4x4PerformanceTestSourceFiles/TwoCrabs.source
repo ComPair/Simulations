@@ -13,19 +13,19 @@ DiscretizeHits                 true
 
 
 Run FFPS
-FFPS.FileName		TwoCrabs10deg
-FFPS.Time		1000.0
+FFPS.FileName		TwoCrabs
+FFPS.Time		10000.0
 
 FFPS.Source Crab
 Crab.ParticleType           1
 Crab.Beam                   FarFieldPointSource 0. 0.
-Crab.Spectrum               PowerLaw 100 100000 2.17
+Crab.Spectrum               PowerLaw 200 200000 2.17
 # Energy integrated Crab flux from 800-100000 in ph/cm2/s -- actual Crab: 0.004972 ph/cm2/s
 Crab.Flux                   0.005
 
 FFPS.Source CrabTwo
 CrabTwo.ParticleType           1
 CrabTwo.Beam                   FarFieldPointSource 10. 0.
-CrabTwo.Spectrum               PowerLaw 100 100000 2.17
+CrabTwo.Spectrum               PowerLaw 200 200000 2.17
 # Energy integrated Crab flux from 800-100000 in ph/cm2/s -- actual Crab: 0.004972 ph/cm2/s
 CrabTwo.Flux                   0.005
