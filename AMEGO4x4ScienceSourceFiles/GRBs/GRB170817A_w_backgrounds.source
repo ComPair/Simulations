@@ -1,0 +1,162 @@
+# Example run for Cosima
+
+
+Version         1
+Geometry        $COMPAIRPATH/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+
+
+Run SpaceSim
+SpaceSim.FileName         GRB170817A_w_backgrounds
+SpaceSim.Time             3.0
+
+SpaceSim.Source GRB
+GRB.ParticleType           1
+GRB.Beam                   FarFieldPointSource 0 0
+GRB.Spectrum               File GRB170817A_main_peak_mid.dat
+GRB.Flux                   0.7
+GRB.LightCurve             File  True   GRB170817A_LC.dat
+
+# Partial beam file for cosima
+
+# Albedo electrons determinined after Alcaraz 2000 & Mizuno 2004
+# Assumptions: 
+# * Only valid near the equator! 
+# * Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+SpaceSim.Source AlbedoElectronsAlcarazMizuno
+AlbedoElectronsAlcarazMizuno.ParticleType           3
+AlbedoElectronsAlcarazMizuno.Beam                   FarFieldFileZenithDependent AlbedoElectronsAlcarazMizuno.beam.dat
+AlbedoElectronsAlcarazMizuno.Spectrum               File AlbedoElectronsAlcarazMizuno.spectrum.dat
+AlbedoElectronsAlcarazMizuno.Flux                   0.0442699
+
+# Partial beam file for cosima
+
+# Albedo neutrons determinined after Kole+ 2014
+# Assumptions: 
+# * Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+# * Solar activity is assumed to be half way between solar minimum and maximum 
+# * The inclination was used to approximate the average Magnetic Latitude 
+SpaceSim.Source AlbedoNeutronsKole
+AlbedoNeutronsKole.ParticleType           6
+AlbedoNeutronsKole.Beam                   FarFieldFileZenithDependent AlbedoNeutronsKole.beam.dat
+AlbedoNeutronsKole.Spectrum               File AlbedoNeutronsKole.spectrum.dat
+AlbedoNeutronsKole.Flux                   0.0408242
+
+# Partial beam file for cosima
+
+# Albedo photons determinined after Turler+ 2010, Mizuno+ 2004, Abdo+ 2009
+# Assumptions: 
+# (1) Use Tuerler below 750 keV, Abdo+ above 200 MeV, Mizuno in between 
+# (2) Everything is normalized to Mizuno 
+# (3) Geomagnetic cutoff difference scaled as in Mizuno 
+# (4) Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+# (5) Tuerler includes the reflected CXB component, not just the Albedo component thus is larger at lower energies than Ajello 
+# (6) The lower energy limit is ~20 keV 
+# (7) Limb brightening and darkening is NOT included
+# (8) There should be a bump form the 511-keV-Compton scatters belog ~450 keV which is NOT included 
+SpaceSim.Source AlbedoPhotonsTuerlerMizunoAbdo
+AlbedoPhotonsTuerlerMizunoAbdo.ParticleType           1
+AlbedoPhotonsTuerlerMizunoAbdo.Beam                   FarFieldFileZenithDependent AlbedoPhotonsTuerlerMizunoAbdo.beam.dat
+AlbedoPhotonsTuerlerMizunoAbdo.Spectrum               File AlbedoPhotonsTuerlerMizunoAbdo.spectrum.dat
+AlbedoPhotonsTuerlerMizunoAbdo.Flux                   0.717496
+
+# Partial beam file for cosima
+
+# Albedo positrons determinined after Alcaraz 2000 & Mizuno 2004
+# Assumptions: 
+# * Don't remember... 
+# * Angular distribution is flat out to the Earth-horizon (no limb brightening!) 
+SpaceSim.Source AlbedoPositronsAlcarazMizuno
+AlbedoPositronsAlcarazMizuno.ParticleType           2
+AlbedoPositronsAlcarazMizuno.Beam                   FarFieldFileZenithDependent AlbedoPositronsAlcarazMizuno.beam.dat
+AlbedoPositronsAlcarazMizuno.Spectrum               File AlbedoPositronsAlcarazMizuno.spectrum.dat
+AlbedoPositronsAlcarazMizuno.Flux                   0.147419
+
+# Partial beam file for cosima
+
+# Albedo proton spectrum upward and downward component combined and averaged determinined after Mizuno 2004
+# Assumptions: 
+# * Equatorial low-earth orbit 
+# * Angular distribution is isotropic 
+SpaceSim.Source AlbedoProtonMizuno
+AlbedoProtonMizuno.ParticleType           4
+AlbedoProtonMizuno.Beam                   FarFieldFileZenithDependent AlbedoProtonMizuno.beam.dat
+AlbedoProtonMizuno.Spectrum               File AlbedoProtonMizuno.spectrum.dat
+AlbedoProtonMizuno.Flux                   0.159324
+
+# Partial beam file for cosima
+
+# Annihilation line determined after Harris, JGR v.108, 2003
+# Assumptions: Average geomagnetic cut-off > 11 GV 
+#              Average SMM altitude 500 
+SpaceSim.Source AnnihilationLineHarris
+AnnihilationLineHarris.ParticleType           1
+AnnihilationLineHarris.Beam                   FarFieldFileZenithDependent AnnihilationLineHarris.beam.dat
+AnnihilationLineHarris.Spectrum               Mono 511
+AnnihilationLineHarris.Flux                   0.0171645
+
+# Partial beam file for cosima
+
+# Cosmic alpha particles using SPENVIS
+# Assumptions: 
+# * log-log extrapolation beyond upper energy limit from SPENVIS
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicAlphasSpenvis
+CosmicAlphasSpenvis.ParticleType           21
+CosmicAlphasSpenvis.Beam                   FarFieldFileZenithDependent CosmicAlphasSpenvis.beam.dat
+CosmicAlphasSpenvis.Spectrum               File CosmicAlphasSpenvis.spectrum.dat
+CosmicAlphasSpenvis.Flux                   0.0655951
+
+# Partial beam file for cosima
+
+# Cosmic electrons after Mizuno 2004
+# Assumptions: 
+# * Solar modulation has been ignored! 
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicElectronsMizuno
+CosmicElectronsMizuno.ParticleType           3
+CosmicElectronsMizuno.Beam                   FarFieldFileZenithDependent CosmicElectronsMizuno.beam.dat
+CosmicElectronsMizuno.Spectrum               File CosmicElectronsMizuno.spectrum.dat
+CosmicElectronsMizuno.Flux                   0.00118309
+
+# Partial beam file for cosima
+
+SpaceSim.Source CosmicPhotonsGruber
+CosmicPhotonsGruber.ParticleType           1
+CosmicPhotonsGruber.Beam                   FarFieldFileZenithDependent CosmicPhotonsGruber.beam.dat
+CosmicPhotonsGruber.Spectrum               File CosmicPhotonsGruber.spectrum.dat
+CosmicPhotonsGruber.Flux                   1.56243
+
+# Partial beam file for cosima
+
+# Cosmic positrons after Mizuno 2004
+# Assumptions: 
+# * Solar modulation has been ignored! 
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicPositronsMizuno
+CosmicPositronsMizuno.ParticleType           2
+CosmicPositronsMizuno.Beam                   FarFieldFileZenithDependent CosmicPositronsMizuno.beam.dat
+CosmicPositronsMizuno.Spectrum               File CosmicPositronsMizuno.spectrum.dat
+CosmicPositronsMizuno.Flux                   0.000100107
+
+# Partial beam file for cosima
+
+# Cosmic protons using SPENVIS
+# Assumptions: 
+# * log-log extrapolation beyond upper energy limit from SPENVIS
+# * Angular distribution is flat out to the Earth-horizon 
+SpaceSim.Source CosmicProtonsSpenvis
+CosmicProtonsSpenvis.ParticleType           4
+CosmicProtonsSpenvis.Beam                   FarFieldFileZenithDependent CosmicProtonsSpenvis.beam.dat
+CosmicProtonsSpenvis.Spectrum               File CosmicProtonsSpenvis.spectrum.dat
+CosmicProtonsSpenvis.Flux                   0.103724
+
