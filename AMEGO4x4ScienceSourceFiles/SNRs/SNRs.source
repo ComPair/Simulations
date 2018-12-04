@@ -1,0 +1,39 @@
+# Example run for Cosima
+# A SNRs in the Zenith
+
+# Peak energy: 250 keV
+
+Version         1
+Geometry        $(COMPAIRPATH)/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+
+Run SpaceSim
+#SpaceSim.FileName         Observation_w49b_brem
+SpaceSim.FileName         Observation_w49b_ic
+#SpaceSim.FileName         Observation_w49b_pion
+SpaceSim.Time             1000000.
+
+SpaceSim.Source SNRs
+SNRs.ParticleType           1
+SNRs.Beam                   FarFieldPointSource 0 0
+#SNRs.Spectrum               File amego-w49b-brem-keV.dat
+# Energy integrated Blazar flux ph/cm2/s NOTE: THIS IS MADE UP!
+#SNRs.Flux                   0.0000108
+
+#SNRs.Spectrum               File amego-w49b-ic-keV.dat
+# Energy integrated Blazar flux ph/cm2/s NOTE: THIS IS MADE UP!
+#SNRs.Flux                   0.00000787
+
+SNRs.Spectrum               File amego-w49b-pion-keV.dat
+# Energy integrated Blazar flux ph/cm2/s NOTE: THIS IS MADE UP!
+SNRs.Flux                   0.0000107
+
