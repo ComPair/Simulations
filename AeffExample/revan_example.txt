@@ -2,103 +2,68 @@ We can alternatively create the .tra file using revan to analyze the events.
 
 start by running and loading the ComPair geometry revan:
 
->>revan -g /path_to_geometry/CompairBase.geo.setup  
+>>revan -g /path_to_geometry/AMEGO_Midex/AmegoBase.geo.setup -c revan_AMEGO_X.cfg -f FarFieldPointSource_1MeV.inc1.id1.sim
 
-First open the sim file: 
-File -> Open (Select *.sim file)
-
-We have to select the reconstruction algorithms via the menu before starting to analyze events. 
-Reconstruction -> Selection of Algorithm
-
-My choices: 
-No coincidence
-Clustering of adjecent voxels
-Chi2 approach for electron tracking
-Compton Sequence reconstruction with energy recovery
-
-Reconstruction -> Coincidence options (I did not deselect this)
-Reconstruction -> Clustering options (I kept the default of 8 neighboring voxels)
-Reconstruction -> Tracking options (I searched for all 3 event types, Maximum layer jump for Comptons: 2, Max number of different track sequences to keep: 1, and unselected the reject purely ambituous sequences, For pair options, I set the search for a pair vertex within this amount of layers to 4)
-I selected the SStrip detector as the tracking detector
-Reconstruction -> Sequence options: I checked only use events which start in 2D strip and kept the other options the default. 
+revan_AMEGO_X.cfg is a configuration file which is a set of pre-selected reconstruction/analysis algorithms. We can explore these in detail later
 
 Now we're ready to roll...
 
-Reconstruction -> Start event reconstruction  This creates the file: UseCase1.inc1.id1.tra
+Reconstruction -> Start event reconstruction Hit the "go" arrow in the gui. 
+This creates the file: FarFieldPointSource_1MeV.inc1.id1.tra
 
-I get lots of outputs that look something like this:
-
-Hit outside detector: SStrip: (3.3875, -4.8125, 0) <-> (4.75, 4.75)
-MRawEventList* MERTrackChiSquare::EvaluateTracks(MRERawEvent* ER): nyi!
-CSR - Sequence: Searching Compton sequence of event with 3 hits (19969)...
-CSR - Sequence: Good event with TS: 0.560944
 
 The final output was:
 
-# Tracked events file options
-# Date 2016-07-15 14:16:47
-# OriginalFile /Users/reginamcaputo/Desktop/ComPair/Simulatons/AeffExample/UseCase1.inc1.id1.sim
-# GeometryFile /Users/reginamcaputo/Desktop/ComPair/Simulatons/AeffExample/../../Geometry/TowerModel/CompairBase.geo.setup
-# 
-# Clusterizer options:
-# 
-# Clusterizing by adjacent voxels
-# Level: 2
-# Sigma: -1
-# 
-# 
-# Tracking - ChiSquare options:
-# 
-# Search MIPs:                  1
-# Search Pairs:                 1
-# Search Comptons:              1
-# Max. number of ambiguities:   5
-# Max. layer jump Compton:      2
-# Number of sequences to keep:  1
-# Reject pure ambiguities:      0
-# 
-# 
-# CSR - energy recovery options:
-# 
-# Test statistics:                 Energy recovery
-# QualityFactorMin:               0
-# QualityFactorMax:               1000
-# MaxNInteractions:               5
-# GuaranteeStartD1:               1
-# 
-
 ----------------------------------------------------------------------------
 
+
 Trigger statistics:
-  Not triggered events: ..................................  10732
-  Number of vetoed events: ...............................      0
-  Number of triggered events: ............................   9268
-    MainTrigger: .........................................   9268
+  Not triggered events: ..................................   5033
+  Number of vetoed events: ...............................   1133
+    Raised vetoes (multiples possible)
+      MainVetoSide: ......................................    490
+      MainVetoTop: .......................................    672
+    Raised triggers canceled by a veto (multiples possible)
+      MainTriggerCsI: ....................................     42
+      SiOnly: ............................................    352
+      SingleSiCsI: .......................................    209
+  Number of triggered events: ............................  13834
+    Raised triggers (multiples possible)
+      MainTriggerCsI: ....................................   1550
+      SiOnly: ............................................   9058
+      SingleSiCsI: .......................................   6326
+
 
 ----------------------------------------------------------------------------
 
 Event statistics for all triggered (!) events:
-  Number of events .......................................   9268 (100.000%)
-  Number of events, which passed event selections ........   9268 (100.000%)
-  Reconstructable events .................................   8257 ( 89.091%)
+  Number of events .......................................  13834 (100.000%)
+  Number of events, which passed event selections ........   8023 ( 57.995%)
+  Reconstructable events .................................  13834 (100.000%)
        Single-site  ......................................      0 (  0.000%)
-       Compton  ..........................................   8219 ( 99.540%)
+       Compton  ..........................................   8011 ( 57.908%)
            Decay  ........................................      0 (  0.000%)
-       Pair  .............................................     33 (  0.400%)
-       Muon  .............................................      5 (  0.061%)
+       Pair  .............................................      0 (  0.000%)
+       Muon  .............................................     12 (  0.087%)
+       PET . .............................................      0 (  0.000%)
+       Multi  ............................................      0 (  0.000%)
 
 Rejection reasons for not reconstructable events:
-  Too many hits in CSR ...................................     74
-  CSR quality factor above threshold .....................      1
-  No good CSR combination ................................    936
-    Total ................................................   1011
+  Too many hits in CSR ...................................      1
+  Event consists of nothing but one track ................   5199
+  Event consists of nothing but two tracks ...............     38
+  Track is not valid .....................................     22
+  Event starts not in D1 .................................    430
+  Electron direction is not valid ........................     75
+  Comptel type with incompatible kinematics ..............     46
+    Total ................................................   5811
 
 ----------------------------------------------------------------------------
 
 
-Event reconstruction finished in 15.3411 sec.
+Event reconstruction finished in 4.18255 sec.
 
-From here you can use the Analysis menu option to look at the resulting events (See figure folder)
+From here you can use the Analysis menu option to look at the resulting events (See figure on confluence)
 
 Now for mimrec...
 
