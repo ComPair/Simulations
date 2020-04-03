@@ -1,5 +1,5 @@
-Instructions for calculating Aeff for CompairBase.geo.setup. 
-These numbers are for the TowerModel as of 7/15/2016
+Instructions for calculating Aeff for AMEGO_Midex/AmegoBase.geo.setup 
+These numbers are for the AMEGO-X base model as of 4/3/2020
 
 I am using an example source file, based on the example source file that is provided in MEGAlib
 
@@ -14,40 +14,46 @@ The flux is measured in particles/cm2/s for far field, or intensity in particles
 Now you're ready to use cosima, the COsmic SImulator for MegAlib based on Geant4
 
 To execute
->>cosmia UseCase1.source
+>>cosima -s 432020 FarFieldPointSource_1MeV.source
+
+Note: -s sets a seed, this will make all the events the same to we can compare exact numbers 
 
 This runs events until the stop criteria. 
 As this runs, the output (for me) looked like this: 
-...
-Storing event 16158 of 998673 at t_obs=499.827s ... Please stand by... Done
-Hit in strip detector "Wafer_2_4" at: (-34.0625/10.6125/55.25)  (14, 172) with 63.5747 keV (64)
-Hit in strip detector "Wafer_2_1" at: (5.4375/-10.4875/25.25)  (9, 197) with 11.6866 keV (12)
-Hit in strip detector "Wafer_2_4" at: (-34.0875/10.6125/55.25)  (14, 173) with 55.1083 keV (55)
-Hit in strip detector "Wafer_2_4" at: (-34.0875/10.5875/55.25)  (13, 173) with 38.8521 keV (39)
-Hit in strip detector "Wafer_2_4" at: (-34.1125/10.5875/55.25)  (13, 174) with 266.204 keV (266)
-Hit in strip detector "CSILog_21" at: (38.5/-8.75/-10.15)  (37, 0) with 96.4946 keV (96)
-Hit in Anger camera "sideACDPlastic" at position: (48.858/-4.54376/34.25) with 46.7155 keV
-Storing event 16159 of 998792 at t_obs=499.889s ... Please stand by... Done
-...
+
+Storing event 19995 of 979930 at t_obs=0.0138581s
+Hit in strip detector "Wafer_3_3" at: (26.625/20.025/33.75)  (132, 0) with 7.69036 keV (8)
+Hit in strip detector "Wafer_3_3" at: (26.575/20.025/33.75)  (131, 0) with 113.598 keV (114)
+Hit in strip detector "Wafer_3_2" at: (25.725/18.575/33.75)  (114, 166) with 0.00524321 keV (0)
+Storing event 19996 of 979932 at t_obs=0.0138582s
+Hit in strip detector "Wafer_4_2" at: (-17.475/37.025/24.75)  (145, 144) with 3.01988 keV (3)
+Hit in strip detector "Wafer_4_2" at: (-17.325/36.575/23.25)  (136, 141) with 130.796 keV (131)
+Hit in strip detector "Wafer_4_2" at: (-17.275/36.575/23.25)  (136, 140) with 21.3905 keV (21)
+Hit in strip detector "Wafer_4_2" at: (-16.725/36.975/21.75)  (144, 129) with 203.943 keV (204)
+Hit in strip detector "Wafer_4_2" at: (-16.725/37.025/21.75)  (145, 129) with 370.225 keV (370)
+Storing event 19997 of 979942 at t_obs=0.0138584s
+Hit in strip detector "Wafer_2_2" at: (-17.625/16.125/57.75)  (117, 147) with 70.0654 keV (70)
+Hit in strip detector "Wafer_2_2" at: (-17.775/16.275/56.25)  (120, 150) with 326.668 keV (327)
+Hit in strip detector "Wafer_2_2" at: (-17.825/16.275/56.25)  (120, 151) with 372.914 keV (373)
+Storing event 19998 of 979945 at t_obs=0.0138584s
 
 Once it hit 20k triggers, this was the output summary:
 
-Summary for run UseCase
+Summary for run FFPS
 
-Total number of generated particles:     1237723
-  Source Pos:                            619029
-  Source Neg:                            618694
+Total number of generated particles:     980098
+  Source Pos:                            980098
 
-Total CPU time spent in run:             251.718 sec
-Time spent per event:                    0.000203371 sec
+Total CPU time spent in run:             70.0908 sec
+Time spent per event:                    7.1514e-05 sec
 
-Observation time:                        618.634 sec
+Observation time:                        0.0138607 sec
 
 Graphics systems deleted.
 Visualization Manager deleting...
 
 
-Then outputs a UseCase1.inc1.id1.sim file
+FarFieldPointSource_1MeV.inc1.id1.sim file
 This file is needed for the subsequent steps.  
 
 Next step is to use sivan or revan to analyze the data.... 

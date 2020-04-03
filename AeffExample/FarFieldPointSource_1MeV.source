@@ -2,7 +2,7 @@
 
 
 Version          1
-Geometry         $COMPAIRPATH/Geometry/TowerModel/CompairBase.geo.setup // Update this to your path
+Geometry         /Users/rcaputo2/Dropbox/Simulations/AMEGO/Geometry/AMEGO_Midex/AmegoBase.geo.setup  // Update this to your path
 CheckForOverlaps 1000 0.01
 PhysicsListEM    Livermore
 
@@ -16,9 +16,9 @@ FFPS.FileName              FarFieldPointSource_1MeV
 FFPS.NTriggers             20000
 
 
-FFPS.Source Pos
+FFPS.Source 			Pos
 Pos.ParticleType        1
-Pos.Beam                FarFieldPointSource  180 360
+Pos.Beam                FarFieldPointSource  0 0
 Pos.Spectrum            Mono  1000
 Pos.Flux                1000.0
 
