@@ -1,127 +1,156 @@
-Using the output .tra file (UseCase1.inc1.id1.tra) from revan we'll start using mimrec (Megalib IMage REConstruction... and more)
+Using the output .tra file (FarFieldPointSource_1MeV.inc1.id1.tra) from revan we'll start using mimrec (Megalib IMage REConstruction... and more)
 
-start by running and loading the ComPair geometry mimrec:
+start by running and loading the AMEGO-X geometry mimrec:
 
->>mimrec -g /path_to_geometry/CompairBase.geo.setup
+>>mimrec -g /path_to_geometry/AMEGO_Midex/AmegoBase.geo.setup -c mimrec_1MeV_AMEGO_X.cfg -f FarFieldPointSource_1MeV.inc1.id1.tra
 
-Load the .tra file you just generated from revan from the menu: 
-
-File -> Open and select UseCase1.inc1.id1.tra (note this can also be done from the terminal with -f )
-
-Menu: Selections -> Coordinate System (I selected Cartesian 2D)
-
-Menu: Selections -> Event Selection 
-I selected all Compton and Pair event types
-make sure that the min/max energy is approprate for a beam of 1000 keV (I have 0->1200 keV)
-with second energy window =0
-The rest of the parameters, I just made sure that they weren't very restrictive
-
-Menu: Imaging -> Image Dimensions +50,-50 with 500 bins in x,y; 
+mimrec is where the event selection happens
 
 Here are the resulting events I get (Menu: Selections -> Show event selections)
 Event selections:
 
-All events  .................... 9268
-Not rejected events  ........... 8170
+Event selections:
+
+All events  .................... 13834
+Not rejected events  ........... 3236
 
 Rejection reasons:
 
-Not good  ......................  1020
+Not good  ......................  5835
 Event Id .......................  0
 Start detector .................  0
 Beam  ..........................  0
-Total energy  ..................  35
+Total energy  ..................  10524
 Time  ..........................  0
 Time walk  .....................  0
 Electron energy  ...............  0
-Gamma energy  ..................  6
+Gamma energy  ..................  0
 Compton angle  .................  0
-First Lever arm  ...............  0
-Any lever arm  .................  0
+First Lever arm  ...............  1
+Any lever arm  .................  1
 Length Compton sequence ........  0
 Clustering quality factor ......  0
-Compton quality factor .........  29
+Compton quality factor .........  0
 Track quality factor ...........  0
 Coincidence window .............  0
 Earth-Horizon cut ..............  0
+Pointing .......................  0
 Max. theta deviation ...........  0
 Max. ARM .......................  0
 Max. SPD .......................  0
 Length track ...................  0
 Opening angle pair  ............  0
 Initial energy deposit pair  ...  0
-Pair quality factor ............  18
+Pair quality factor ............  0
 Use photos  ....................  0
 Use pairs  .....................  0
 Use Compton  ...................  0
 Use tracked Compton  ...........  0
 Use not tracked Compton  .......  0
-Use muons  .....................  5
-Use unidentifiables  ...........  1011
+Use muons  .....................  12
+Use PET  .......................  0
+Use multi  .....................  0
+Use unidentifiables  ...........  5811
 Use decays  ....................  0
-Use flagged as bad  ............  1011
+Use flagged as bad  ............  5811
 
-ACCEPTED  ......................  8170
+ACCEPTED  ......................  3236
+ANALYZED  ......................  13834
 
 
-To look at the image hit the play button That produces Image__Iteration__0___1.png
+To look at the image hit the play button 
 
 To extract the selected events and thus produce an event selected .tra file use Menu: Selections -> Extract Events
-This produces: UseCase1.inc1.id1.extracted.tra for use later
+This produces: FarFieldPointSource_1MeV.inc1.id1.extracted.tra for use later
 
 To look at the energy spectrum Menu: Analysis/Response -> Energy Spectrum
-Here I made no additional selection, and chose 200 bins
+Here I made no additional selection, and chose 100 bins
 
 Energy spectrum - some additional statistics:
-Number of events:     8170 (inside=8170, outside=0)
-Avg. measured energy: 939.385 keV
+Number of events:     3236 (inside=3236, outside=0)
+Avg. measured energy: 989.856 keV
 
-My distribution is bimodal. one peaking around 800 keV and one around 1000 keV. 
 From here I right click on the historgam to pull up a FitPanel in ROOT
 
-I'm going to go back to the event selection and specify events with and without recoil electron tracks. 
+Fitting that peak gives: 
 
-For Compton events without a recoil track, fitting that peak gives: 
-
-Energy spectrum - some additional statistics:
-Number of events:     6082 (inside=477, outside=5605)
-Avg. measured energy: 935.695 keV
-
- FCN=30.0836 FROM MIGRAD    STATUS=CONVERGED      69 CALLS          70 TOTAL
-                     EDM=2.70728e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+TFitEditor::DoFit - using function PrevFitTMP  0x7ffac2a88b50
+ FCN=95.2588 FROM MIGRAD    STATUS=CONVERGED      69 CALLS          70 TOTAL
+                     EDM=4.58268e-10    STRATEGY= 1      ERROR MATRIX ACCURATE 
   EXT PARAMETER                                   STEP         FIRST   
   NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     2.35831e+01   1.57016e+00   4.79991e-03   7.33970e-05
-   2  Mean         9.95500e+02   1.95656e+00   7.46064e-03   3.63714e-05
-   3  Sigma        3.58932e+01   1.49077e+00   4.27192e-05  -3.14123e-03
-                               ERR DEF= 0.5
+   1  Constant     4.79991e+01   1.34096e+00   5.06386e-03  -2.06074e-05
+   2  Mean         9.90068e+02   6.53052e-01   2.83646e-03   3.02895e-05
+   3  Sigma        2.59442e+01   4.81240e-01   2.16472e-05  -3.16010e-03
 
-This means the energy resolution for compton events without a recoil track is 35.9 keV (the width of the gaussian fit)
 
-Now change the energy window to +/- 2sigma of the peak (in my case 928-1072 keV)
+This means the energy resolution for compton events without a recoil track is 25.9 keV (the width of the gaussian fit)
 
-There are too few events here to run the ARM analysis, so I'm switching to events with a recoil track
+The config file has already selected an energy window of +/- 2sigma around the peak. You can play with this in your event selection - but this is whre it comes from 
 
-With a recoil track, I get an energy spectrum with a dual peak again. I only fit one of the peaks to determine the energy resolution. 
-We should figure out what's causing the 2nd peak. 
+Now we do the ARM analysis: 
+To look at the Menu: Analysis/Response -> ARM of scattered gamma ray
+theta/phi = 0 and the acceptance radius is 15 deg with 100 bins in the histogram
 
-Energy spectrum - some additional statistics:
-Number of events:     2073 (inside=1050, outside=1023)
-Avg. measured energy: 938.71 keV
+Here are the results: 
 
- FCN=33.8858 FROM MIGRAD    STATUS=CONVERGED      69 CALLS          70 TOTAL
-                     EDM=4.88881e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+TFitEditor::DoFit - using function PrevFitTMP  0x7ffac2a88b50
+ FCN=95.2588 FROM MIGRAD    STATUS=CONVERGED      69 CALLS          70 TOTAL
+                     EDM=4.58268e-10    STRATEGY= 1      ERROR MATRIX ACCURATE 
   EXT PARAMETER                                   STEP         FIRST   
   NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     1.01922e+02   4.58181e+00   1.45915e-02  -6.41140e-05
-   2  Mean         9.94192e+02   1.54534e+00   6.00591e-03  -3.05758e-04
-   3  Sigma        3.87718e+01   1.27881e+00   3.53133e-05  -4.49800e-02
-                               ERR DEF= 0.5
+   1  Constant     4.79991e+01   1.34096e+00   5.06386e-03  -2.06074e-05
+   2  Mean         9.90068e+02   6.53052e-01   2.83646e-03   3.02895e-05
+   3  Sigma        2.59442e+01   4.81240e-01   2.16472e-05  -3.16010e-03
 
-These events have an energy resolution of 38.8 keV. 
 
-Selecting events within 2sigma of the energy resolution yields: (922-1078 keV)
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
 
-The results are pretty terrible. So we should chat about how to make these reasonable. :) 
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        3236
+Compton and pair events in histogram:    2865 (88.5352%)
+
+RMS:                                     4.41994 deg
+
+Total FWHM of fit (not of data!):        4.69791 deg
+Maximum of fit (x position):             0.19427 deg (1-sigma uncertainty: 0.116919 deg ... 0.271344 deg) with maximum 123.203 cts
+
+
+
+Now we have effectively measured the energy resolution at 1 MeV (25.9 keV) and the angular resolution (4.4 deg). We can now take these data to calculate the effective area. I'll go back to the menu: 
+Analysis/Response -> ARM of scattered gamma ray
+
+ And select 4.4 deg for the cut. This yields 2138 events in the histogram: 
+
+ Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        3236
+Compton and pair events in histogram:    2138 (66.0692%)
+
+RMS:                                     2.04861 deg
+
+
+To calculate the Aeff: number of events in the histogram/number of generated events * area of surrounding sphere
+events in histogram = 2138 from above
+generated events = 980098 (this is near the bottom of the .sim file. Look for the "ID" flag)
+Area of surrounding sphere = 70685.8 (at the top of the sim file "SimulationStartAreaFarField")
+
+I get Aeff = 154.2 cm^2
+
+
+
 
 
