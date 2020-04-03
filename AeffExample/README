@@ -10,7 +10,9 @@ I've broken this into a series of steps and example files
 
 First visit cosmia_example.txt. This will create a simulation file needed for the reconstruction
 
-Next both sivan and revan are event reconstruction programs. We'll be using revan for our work. See instructions in revan_example.txt 
+Next both sivan and revan are event reconstruction programs. Sivan is for perfect event reconstruction and doesn’t take into account and detector effects/thresholds/resolutions. It is typically only used for debugging and better understanding of the instrument response. Revan is the standard reconstruction tool and should almost always be used.
+
+We'll be using revan for our work. See instructions in revan_example.txt 
 
 Next is mimrec (mimrec_example.txt) This takes the output .tra file from revan and does image reconstruction. 
 
