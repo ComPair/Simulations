@@ -1,17 +1,16 @@
 These are the basic steps to do an Aeff calculation using MEGAlib. 
 
+We're using MEGALib v. 3.00.00 (http://megalibtoolkit.com)
+Root Version: 6.18.04
+Geant4 Version: v10.02.p03
+
 Starting with our geometry file:
 
 I've broken this into a series of steps and example files
 
 First visit cosmia_example.txt. This will create a simulation file needed for the reconstruction
 
-Next both sivan and revan are event reconstruction programs. The simple instructions are found in 
-sivan_example.txt and revan_example.txt
-
-It seems like revan is prefered in the MEGAlib documentation. We can dig more into the details. I've used both and they appear to produce similar results. 
-
-I'll use the output of revan for the rest of the example. 
+Next both sivan and revan are event reconstruction programs. We'll be using revan for our work. See instructions in revan_example.txt 
 
 Next is mimrec (mimrec_example.txt) This takes the output .tra file from revan and does image reconstruction. 
 
