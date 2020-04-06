@@ -22,48 +22,40 @@ This runs events until the stop criteria.
 As this runs, the output (for me) looked like this: 
 
 ...
-Storing event 19996 of 994787 at t_obs=0.0140979s
-Hit in strip detector "Wafer_3_2" at: (-23.275/-18.425/38.25)  (65, 163) with 29.6713 keV (30)
-Hit in strip detector "Wafer_1_3" at: (-24.025/8.325/51.75)  (156, 80) with 16.7321 keV (17)
-Hit in strip detector "Wafer_1_2" at: (-15.225/8.325/54.75)  (156, 99) with 60.2543 keV (60)
-Hit in strip detector "Wafer_3_2" at: (-23.225/-18.425/38.25)  (64, 163) with 165.622 keV (166)
-Hit in strip detector "Wafer_3_2" at: (-24.525/-18.525/36.75)  (90, 165) with 109.356 keV (109)
-Hit in strip detector "Wafer_3_2" at: (-25.025/-18.475/38.25)  (100, 164) with 66.0288 keV (66)
-Hit in strip detector "Wafer_3_2" at: (-25.025/-18.525/38.25)  (100, 165) with 6.37119 keV (6)
-Hit in strip detector "Wafer_3_2" at: (-25.075/-18.525/38.25)  (101, 165) with 190.845 keV (191)
-Hit in scintillator "ACD" at (0, 0, 70.25)  with 31.5211 keV
-Hit in scintillator "ACDSide_Det_1_1" at (-53.25, 0, 35.25)  with 183.03 keV
-Storing event 19997 of 994898 at t_obs=0.0140997s
-Hit in strip detector "Wafer_2_3" at: (22.175/-17.475/23.25)  (144, 43) with 44.0043 keV (44)
-Hit in calorimeter "CSISegment_Det" at position: (28.2737/-16.25/-4)  (0, 15) with 114.48 keV (78, 37)
-Hit in calorimeter "CSISegment_Det" at position: (28.25/-16.5195/-6)  (0, 7) with 696.614 keV (451, 245)
-Hit in calorimeter "CSISegment_Det" at position: (26.75/-16.136/-6)  (0, 8) with 144.903 keV (94, 51)
-Storing event 19998 of 994972 at t_obs=0.0141009s
-Hit in strip detector "Wafer_2_2" at: (-17.625/-15.225/26.25)  (147, 99) with 110.38 keV (110)
-Hit in strip detector "Wafer_2_2" at: (-17.625/-15.275/26.25)  (147, 100) with 246.907 keV (247)
-Hit in strip detector "Wafer_2_2" at: (-17.625/-15.325/26.25)  (147, 101) with 62.554 keV (63)
-Hit in strip detector "Wafer_2_2" at: (-16.225/-14.925/24.75)  (119, 93) with 193.354 keV (193)
-Hit in strip detector "Wafer_2_2" at: (-16.175/-14.925/24.75)  (118, 93) with 17.1078 keV (17)
-Hit in scintillator "ACDSide_Det_1_1" at (-53.25, 0, 35.25)  with 170.164 keV
-Storing event 19999 of 995023 at t_obs=0.0141018s
-Hit in strip detector "Wafer_1_4" at: (35.075/-1.675/17.25)  (23, 106) with 133.426 keV (133)
-Hit in calorimeter "CSISegment_Det" at position: (29.9484/-8.75/-4)  (0, 20) with 367.345 keV (254, 114)
-Storing event 20000 of 995115 at t_obs=0.0141031s
+Storing event 19996 of 952448 at t_obs=0.0134736s
+Hit in strip detector "Wafer_3_3" at: (29.475/-25.575/35.25)  (111, 189) with 102.111 keV (102)
+Hit in strip detector "Wafer_3_3" at: (29.475/-25.625/35.25)  (112, 189) with 294.959 keV (295)
+Hit in strip detector "Wafer_3_3" at: (29.425/-25.625/35.25)  (112, 188) with 58.1364 keV (58)
+Hit in calorimeter "CSISegment_Det" at position: (-17.7237/5.75/-4)  (0, 3) with 163.842 keV (105, 59)
+Hit in calorimeter "CSISegment_Det" at position: (-13.2761/10.25/-8)  (0, 6) with 70.6966 keV (47, 23)
+Storing event 19997 of 952586 at t_obs=0.0134755s
+Hit in strip detector "Wafer_4_2" at: (-12.225/36.225/33.75)  (129, 39) with 3.36448 keV (3)
+Hit in strip detector "Wafer_4_2" at: (-12.275/35.475/32.25)  (114, 40) with 89.5459 keV (90)
+Hit in strip detector "Wafer_4_2" at: (-11.325/34.575/33.75)  (96, 21) with 33.7147 keV (34)
+Hit in strip detector "Wafer_4_2" at: (-11.325/34.525/33.75)  (95, 21) with 351.568 keV (352)
+Hit in scintillator "ACDSide_Det_2_2" at (0, 53.25, 32.25)  with 18.0632 keV
+Storing event 19998 of 952607 at t_obs=0.0134758s
+Hit in strip detector "Wafer_4_4" at: (-32.725/35.425/26.25)  (113, 59) with 134.418 keV (134)
+Hit in strip detector "Wafer_3_1" at: (-8.775/20.075/33.75)  (1, 165) with 171.676 keV (172)
+Hit in strip detector "Wafer_3_1" at: (-8.825/20.075/33.75)  (1, 166) with 46.4028 keV (46)
+Storing event 19999 of 952723 at t_obs=0.0134776s
+Hit in strip detector "Wafer_1_4" at: (-33.275/9.475/23.25)  (179, 70) with 155.682 keV (156)
+Hit in strip detector "Wafer_1_4" at: (-37.625/8.575/14.25)  (161, 157) with 90.488 keV (90)
+Storing event 20000 of 952758 at t_obs=0.0134782s
 
 
 Summary for run FFPS
 
-Total number of generated particles:     995115
-  Source Pos:                            995115
+Total number of generated particles:     952758
+  Source Pos:                            952758
 
-Total CPU time spent in run:             64.5739 sec
-Time spent per event:                    6.48909e-05 sec
+Total CPU time spent in run:             63.5664 sec
+Time spent per event:                    6.67183e-05 sec
 
-Observation time:                        0.0141031 sec
+Observation time:                        0.0134782 sec
 
 Graphics systems deleted.
 Visualization Manager deleting...
-
 
 
 This cosima step has created the FarFieldPointSource_1MeV.inc1.id1.sim file which will be used for the subsequent steps of this example.

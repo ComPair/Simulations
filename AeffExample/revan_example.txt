@@ -14,54 +14,52 @@ This creates the file: FarFieldPointSource_1MeV.inc1.id1.tra
 
 The final output was:
 
-
 ----------------------------------------------------------------------------
 
 
 Trigger statistics:
-  Not triggered events: ..................................   4914
-  Number of vetoed events: ...............................   1130
+  Not triggered events: ..................................   5085
+  Number of vetoed events: ...............................    463
     Raised vetoes (multiples possible)
-      MainVetoSide: ......................................    466
-      MainVetoTop: .......................................    688
+      MainVetoSide: ......................................    463
     Raised triggers canceled by a veto (multiples possible)
-      MainTriggerCsI: ....................................     40
-      SiOnly: ............................................    349
-      SingleSiCsI: .......................................    229
-  Number of triggered events: ............................  13956
+      MainTriggerCsI: ....................................     22
+      SiOnly: ............................................    176
+      SingleSiCsI: .......................................     85
+  Number of triggered events: ............................  14452
     Raised triggers (multiples possible)
-      MainTriggerCsI: ....................................   1595
-      SiOnly: ............................................   8990
-      SingleSiCsI: .......................................   6561
+      MainTriggerCsI: ....................................   1696
+      SiOnly: ............................................   9524
+      SingleSiCsI: .......................................   6624
 
 
 ----------------------------------------------------------------------------
 
 Event statistics for all triggered (!) events:
-  Number of events .......................................  13956 (100.000%)
-  Number of events, which passed event selections ........   8291 ( 59.408%)
-  Reconstructable events .................................  13956 (100.000%)
+  Number of events .......................................  14452 (100.000%)
+  Number of events, which passed event selections ........   8359 ( 57.840%)
+  Reconstructable events .................................  14452 (100.000%)
        Single-site  ......................................      0 (  0.000%)
-       Compton  ..........................................   8279 ( 59.322%)
+       Compton  ..........................................   8350 ( 57.777%)
            Decay  ........................................      0 (  0.000%)
        Pair  .............................................      0 (  0.000%)
-       Muon  .............................................     12 (  0.086%)
+       Muon  .............................................      9 (  0.062%)
        PET . .............................................      0 (  0.000%)
        Multi  ............................................      0 (  0.000%)
 
 Rejection reasons for not reconstructable events:
-  Event consists of nothing but one track ................   5076
-  Event consists of nothing but two tracks ...............     34
-  Track is not valid .....................................     33
-  Event starts not in D1 .................................    418
+  Too many hits in CSR ...................................      1
+  Event consists of nothing but one track ................   5437
+  Event consists of nothing but two tracks ...............     57
+  Track is not valid .....................................     32
+  Event starts not in D1 .................................    470
   Electron direction is not valid ........................     66
-  Comptel type with incompatible kinematics ..............     38
-    Total ................................................   5665
+  Comptel type with incompatible kinematics ..............     30
+    Total ................................................   6093
 
 ----------------------------------------------------------------------------
 
-
-Event reconstruction finished in 3.71116 sec.
+Event reconstruction finished in 3.72303 sec.
 
 
 
