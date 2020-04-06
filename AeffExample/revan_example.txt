@@ -14,56 +14,58 @@ This creates the file: FarFieldPointSource_1MeV.inc1.id1.tra
 
 The final output was:
 
+
 ----------------------------------------------------------------------------
 
 
 Trigger statistics:
-  Not triggered events: ..................................   5033
-  Number of vetoed events: ...............................   1133
+  Not triggered events: ..................................   4914
+  Number of vetoed events: ...............................   1130
     Raised vetoes (multiples possible)
-      MainVetoSide: ......................................    490
-      MainVetoTop: .......................................    672
+      MainVetoSide: ......................................    466
+      MainVetoTop: .......................................    688
     Raised triggers canceled by a veto (multiples possible)
-      MainTriggerCsI: ....................................     42
-      SiOnly: ............................................    352
-      SingleSiCsI: .......................................    209
-  Number of triggered events: ............................  13834
+      MainTriggerCsI: ....................................     40
+      SiOnly: ............................................    349
+      SingleSiCsI: .......................................    229
+  Number of triggered events: ............................  13956
     Raised triggers (multiples possible)
-      MainTriggerCsI: ....................................   1550
-      SiOnly: ............................................   9058
-      SingleSiCsI: .......................................   6326
+      MainTriggerCsI: ....................................   1595
+      SiOnly: ............................................   8990
+      SingleSiCsI: .......................................   6561
 
 
 ----------------------------------------------------------------------------
 
 Event statistics for all triggered (!) events:
-  Number of events .......................................  13834 (100.000%)
-  Number of events, which passed event selections ........   8023 ( 57.995%)
-  Reconstructable events .................................  13834 (100.000%)
+  Number of events .......................................  13956 (100.000%)
+  Number of events, which passed event selections ........   8291 ( 59.408%)
+  Reconstructable events .................................  13956 (100.000%)
        Single-site  ......................................      0 (  0.000%)
-       Compton  ..........................................   8011 ( 57.908%)
+       Compton  ..........................................   8279 ( 59.322%)
            Decay  ........................................      0 (  0.000%)
        Pair  .............................................      0 (  0.000%)
-       Muon  .............................................     12 (  0.087%)
+       Muon  .............................................     12 (  0.086%)
        PET . .............................................      0 (  0.000%)
        Multi  ............................................      0 (  0.000%)
 
 Rejection reasons for not reconstructable events:
-  Too many hits in CSR ...................................      1
-  Event consists of nothing but one track ................   5199
-  Event consists of nothing but two tracks ...............     38
-  Track is not valid .....................................     22
-  Event starts not in D1 .................................    430
-  Electron direction is not valid ........................     75
-  Comptel type with incompatible kinematics ..............     46
-    Total ................................................   5811
+  Event consists of nothing but one track ................   5076
+  Event consists of nothing but two tracks ...............     34
+  Track is not valid .....................................     33
+  Event starts not in D1 .................................    418
+  Electron direction is not valid ........................     66
+  Comptel type with incompatible kinematics ..............     38
+    Total ................................................   5665
 
 ----------------------------------------------------------------------------
 
 
-Event reconstruction finished in 4.18255 sec.
+Event reconstruction finished in 3.71116 sec.
 
-From here you can use the Analysis menu option to look at the resulting events (See figure on confluence)
+
+
+If you used the same seed as I did in the cosima_example.txt file, your numbers should be identical to the ones above. From here you can use the Analysis menu option to look at the resulting events (See figure on confluence)
 
 Now for mimrec...
 
