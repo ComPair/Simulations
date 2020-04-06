@@ -2,7 +2,7 @@
 
 
 Version          1
-Geometry         $COMPAIRPATH/Geometry/TowerModel/CompairBase.geo.setup // Update this to your path
+Geometry         /Users/rcaputo2/Dropbox/Simulations/AMEGO/Geometry/AMEGO_Midex/AmegoBase.geo.setup // Update this to your path
 CheckForOverlaps 1000 0.01
 PhysicsListEM    Livermore
 
