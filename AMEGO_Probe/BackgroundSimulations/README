@@ -1,0 +1,26 @@
+The Background Simulations for AMEGO have been performed in MEGAlib and are detailed on the confluence page:
+https://confluence.slac.stanford.edu/display/COMPair/Background+Simulations+in+MEGAlib
+
+Here we have included all of the files that were used and created in that process. The raw .sim files from the simulation are not included, since they are
+prohibitively large, but the final .tra files after event reconstruction are included in ComPair/Simulation-Data-Files/AMEGO_Probe/BackgroundSimulations. 
+
+The Geometry directory contains the AMEGO Probe Geometry that was used for the background simulations in June 2019.
+
+The IsotopeFiles directory contains the *Isotope.dat files that are created in the first step of the activation simulations (for HadronicComponentsPrompt.source,
+TrappedHadronicComponentsPrompt.source, and TrappedLeptonicComponentsPrompt.source) 
+
+The SourceFiles contains the background source files. These were obtained from MEGAlib's BackgroundGenerator assuming an altitude of 575 km, a Inclination angle
+of 6 deg, and an average Geomagentic Cutoff of 11.9. If these orbital parameters do not change, you can use these .source files. Just be sure to change the path
+of the Geometry in Common.partial.source. There are 6 .source and .dat files that were produced through the activation simulations performed in June 2019
+(HadronicBackgroundActivation_130619.dat, HadronicBackgroundIsotopes_130619.source, TrappedHadronicBackgroundActivation_180619.dat,
+TrappedHadronicBackgroundIsotopes_180619.source, TrappedLeptonicBackgroundActivation_160619.dat, TrappedLeptonicBackgroundIsotopes_160619.source). These have been dated as such and are kept here for future reference.
+
+The TraFiles_R1 and TraFiles_R5 include the final results from the Background Simulations from June 2019. The names of these directories refer to the difference
+revan configuration files that were used during the reconstruction (which are included here). The TraFiles_R1 uses the configuration revan_R1_clustering.cfg and
+TraFiles_R5 uses revan_R5_firstinteractionD1_MIPS_clustering.cfg. The main difference is that R5 requires the first interaction to be in the tracker and therefore
+is more suited for higher energy pair events. R1 allows for events which are only contained in the CZT and thus has a higher effective area in the Compton
+regime. In each of these directories, there is a TotalBackground.R*.tra.gz which points to the .tra files in
+ComPair/Simulation-Data-Files/AMEGO_Probe/BackgroundSimulations. Thre is also a spectrum that shows each background component.
+
+BackgroundViewer.C is a MEGAlib script which allows you to view the intital .source and .dat files that are being used in the simulations. The output of
+BackgroundViewer for the June 2019 source files contained here are shown in Background_Altitude575km_Inclination6_GeomagneticCutoff11.9.pdf.

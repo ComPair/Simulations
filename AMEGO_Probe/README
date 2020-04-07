@@ -1,4 +1,6 @@
-In this repository, we have all of the simulations that were run for the AMEGO Probe White Paper. This includes the
-Background Simulations (the .tra files are kept under the Simulation-Data-Files repo), the Mono-energetic Point source
-simulations for instrument performance (which are obtained with the scripts in the python repo), and the science simulations.
+In this repository, we have all of the simulations that were run for the AMEGO Probe White Paper. This includes 
+1) Background Simulations (the .tra files are kept under the Simulation-Data-Files repo),
+2) the mono-energetic point source simulations for instrument performance (which are obtained with the scripts in the python repo; the .tra files are kept under
+the Simulation-Data-Files repo),
+3) the science simulations performed for the AMEGO Mission White Paper in June 2019
 
