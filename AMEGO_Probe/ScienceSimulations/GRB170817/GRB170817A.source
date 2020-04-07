@@ -1,0 +1,27 @@
+# Example run for Cosima
+
+
+Version         1
+Geometry        ~/Software/AMEGO/Geometry/AMEGO_4x4TowerModel/AmegoBase.geo.setup
+
+# Physics list
+PhysicsListEM                        Livermore
+PhysicsListEMActivateFluorescence    false
+
+# Output formats
+StoreCalibrated                      true
+StoreSimulationInfo                  true
+StoreSimulationInfoIonization        false
+DiscretizeHits                       true
+
+
+Run SpaceSim
+SpaceSim.FileName         GRB170817A_Pol
+SpaceSim.Time             3.0
+
+SpaceSim.Source GRB
+GRB.ParticleType           1
+GRB.Beam                   FarFieldPointSource 0 0
+GRB.Spectrum               File GRB170817A_main_peak_mid.dat
+GRB.Flux                   0.7
+GRB.LightCurve             File  True   GRB170817A_LC.dat
