@@ -1,0 +1,14 @@
+Results for simulation: 5011.872 MeV Cos 0.8 /data/slag2/dtak/PerformancePlotSimFiles/FarFieldPointSource_5011.872MeV_Cos0.8.inc1.id1.tra
+Compton Events Reconstructed: 1961
+Compton Energy Resolution (keV): nan
+Compton Angular Resolution (deg): nan
+Untracked Compton Events Reconstructed: 1752
+Untracked Compton Energy Resolution (keV): nan
+Untracked Compton Angular Resolution (deg): nan
+Tracked Compton Events Reconstructed: 209
+Tracked Compton Energy Resolution (keV): nan
+Tracked Compton Angular Resolution (deg): nan
+Pair Events Reconstructed: 1159
+Pair Energy Resolution (keV): 862.1612999999998
+Pair Angular Containment (68%): 0.79218421284345
+Events Not Reconstructed Flagged as Bad: 20656

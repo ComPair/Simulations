@@ -1,0 +1,14 @@
+Results for simulation: 31.622 MeV Cos 0.8 FarFieldPointSource_31.622MeV_Cos0.8.inc1.id1.tra
+Compton Events Reconstructed: 15332
+Compton Energy Resolution (keV): nan
+Compton Angular Resolution (deg): nan
+Untracked Compton Events Reconstructed: 11161
+Untracked Compton Energy Resolution (keV): nan
+Untracked Compton Angular Resolution (deg): nan
+Tracked Compton Events Reconstructed: 4171
+Tracked Compton Energy Resolution (keV): nan
+Tracked Compton Angular Resolution (deg): nan
+Pair Events Reconstructed: 9876
+Pair Energy Resolution (keV): 8827.876950000002
+Pair Angular Containment (68%): 7.008136576802488
+Events Not Reconstructed Flagged as Bad: 12523
