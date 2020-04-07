@@ -63,7 +63,7 @@ Event reconstruction finished in 3.72303 sec.
 
 
 
-If you used the same seed as I did in the cosima_example.txt file, your numbers should be identical to the ones above. From here you can use the Analysis menu option to look at the resulting events (See figure on confluence)
+If you used the same seed as I did in the cosima_example.txt file, your numbers should be identical to the ones above. From here you can use the Analysis menu option to explore more about the events, but we're going to move on to mimrec.
 
 Now for mimrec...
 

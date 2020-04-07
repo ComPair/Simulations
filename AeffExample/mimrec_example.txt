@@ -81,7 +81,7 @@ TFitEditor::DoFit - using function PrevFitTMP  0x7fbee912c4d0
    2  Mean         9.89832e+02   6.10883e-01   2.53756e-03  -2.29804e-06
    3  Sigma        2.57163e+01   4.71590e-01   2.03557e-05   2.13862e-04
 
-This means the energy resolution is 25.7 keV (the width of the gaussian fit). Since this is at 1MeV, there are no pair events here. In the configuration file, we have allowed both tracked and untracked events, so this is a combination of the two.
+This means the energy resolution is 25.7 keV (the width of the gaussian fit). Since this is at 1MeV, there are no pair events here. In the configuration file, we have allowed both tracked and untracked events, so this is a combination of the two. See the plot on the Simulation Challenge confluence page to compare (https://confluence.slac.stanford.edu/display/COMPair/Simulation+Challenge)
 
 The config file has already selected an energy window of +/- 3sigma around the peak. When calculating the effecitve area for monoenergetic sources, we always select on the photopeak to only count the events which have been properly reconstructed. +/- 3sigma is standard, but tighter constraints will give a better angular resolution. You can play with this in your event selection - but this is whre it comes from 
 
@@ -102,6 +102,8 @@ RMS:                                     4.37552 deg
 Total FWHM of fit (not of data!):        4.39191 deg
 Maximum of fit (x position):             0.155761 deg (1-sigma uncertainty: 0.0827365 deg ... 0.226514 deg) with maximum 141.691 cts
 
+
+Here, the FWHM of the ARM distribution represents the angular resolution of the instrument in the Compton regime. See the plot on the Simulation Challenge confluence page to compare (https://confluence.slac.stanford.edu/display/COMPair/Simulation+Challenge).
 
 Now we have effectively measured the energy resolution at 1 MeV (25.7 keV) and the angular resolution (4.4 deg). We can now take these data to calculate the effective area. In addition to a photopeak energy cut, we also make a selection on the ARM, where we only count the events which are reconstructed to be within 1 FWHM of the true source position. I'll go back to the menu: 
 Analysis/Response -> ARM of scattered gamma ray

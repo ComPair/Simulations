@@ -11,6 +11,8 @@ It is a monoenergetic beam at 1000 keV of gamma-rays (particle type 1)
 There are also various types of spectral options (gaussian, black body, etc)
 The flux is measured in particles/cm2/s for far field, or intensity in particles/sec for all other sources
 
+Be sure to change the path of the geometry file in FarFieldPointSource_1MeV.source.
+
 Now you're ready to use cosima, the COsmic SImulator for MegAlib based on Geant4
 
 To execute
