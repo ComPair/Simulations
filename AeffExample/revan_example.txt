@@ -18,52 +18,52 @@ The final output was:
 
 
 Trigger statistics:
-  Not triggered events: ..................................   5033
-  Number of vetoed events: ...............................   1133
+  Not triggered events: ..................................   5085
+  Number of vetoed events: ...............................    463
     Raised vetoes (multiples possible)
-      MainVetoSide: ......................................    490
-      MainVetoTop: .......................................    672
+      MainVetoSide: ......................................    463
     Raised triggers canceled by a veto (multiples possible)
-      MainTriggerCsI: ....................................     42
-      SiOnly: ............................................    352
-      SingleSiCsI: .......................................    209
-  Number of triggered events: ............................  13834
+      MainTriggerCsI: ....................................     22
+      SiOnly: ............................................    176
+      SingleSiCsI: .......................................     85
+  Number of triggered events: ............................  14452
     Raised triggers (multiples possible)
-      MainTriggerCsI: ....................................   1550
-      SiOnly: ............................................   9058
-      SingleSiCsI: .......................................   6326
+      MainTriggerCsI: ....................................   1696
+      SiOnly: ............................................   9524
+      SingleSiCsI: .......................................   6624
 
 
 ----------------------------------------------------------------------------
 
 Event statistics for all triggered (!) events:
-  Number of events .......................................  13834 (100.000%)
-  Number of events, which passed event selections ........   8023 ( 57.995%)
-  Reconstructable events .................................  13834 (100.000%)
+  Number of events .......................................  14452 (100.000%)
+  Number of events, which passed event selections ........   8359 ( 57.840%)
+  Reconstructable events .................................  14452 (100.000%)
        Single-site  ......................................      0 (  0.000%)
-       Compton  ..........................................   8011 ( 57.908%)
+       Compton  ..........................................   8350 ( 57.777%)
            Decay  ........................................      0 (  0.000%)
        Pair  .............................................      0 (  0.000%)
-       Muon  .............................................     12 (  0.087%)
+       Muon  .............................................      9 (  0.062%)
        PET . .............................................      0 (  0.000%)
        Multi  ............................................      0 (  0.000%)
 
 Rejection reasons for not reconstructable events:
   Too many hits in CSR ...................................      1
-  Event consists of nothing but one track ................   5199
-  Event consists of nothing but two tracks ...............     38
-  Track is not valid .....................................     22
-  Event starts not in D1 .................................    430
-  Electron direction is not valid ........................     75
-  Comptel type with incompatible kinematics ..............     46
-    Total ................................................   5811
+  Event consists of nothing but one track ................   5437
+  Event consists of nothing but two tracks ...............     57
+  Track is not valid .....................................     32
+  Event starts not in D1 .................................    470
+  Electron direction is not valid ........................     66
+  Comptel type with incompatible kinematics ..............     30
+    Total ................................................   6093
 
 ----------------------------------------------------------------------------
 
+Event reconstruction finished in 3.72303 sec.
 
-Event reconstruction finished in 4.18255 sec.
 
-From here you can use the Analysis menu option to look at the resulting events (See figure on confluence)
+
+If you used the same seed as I did in the cosima_example.txt file, your numbers should be identical to the ones above. From here you can use the Analysis menu option to explore more about the events, but we're going to move on to mimrec.
 
 Now for mimrec...
 
