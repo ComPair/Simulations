@@ -1,0 +1,15 @@
+Results for simulation: 31.622 MeV Cos 1.0 /data/slag2/rcaputo/AMEGO/AMEGO4x4PerformancePlotTraFiles/TraFiles_R5/FarFieldPointSource_31.622MeV_Cos1.0.inc1.id1.tra
+Compton Events Reconstructed: 2696
+Compton Energy Resolution (keV): nan
+Compton Angular Resolution (deg): nan
+Untracked Compton Events Reconstructed: 1943
+Untracked Compton Energy Resolution (keV): nan
+Untracked Compton Angular Resolution (deg): nan
+Tracked Compton Events Reconstructed: 753
+Tracked Compton Energy Resolution (keV): nan
+Tracked Compton Angular Resolution (deg): nan
+Pair Events Ideal: 9102
+Pair Events Reconstructed: 7216
+Pair Energy Resolution (keV): 4126.26751592
+Pair Angular Containment (68%): 5.64461964409
+Events Not Reconstructed Flagged as Bad: 68815
