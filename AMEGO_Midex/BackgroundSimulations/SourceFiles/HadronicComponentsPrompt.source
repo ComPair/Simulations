@@ -1,0 +1,21 @@
+# Components file for the hadron simulations - prompt
+
+Include Common.partial.source
+
+
+# Physics list
+PhysicsListHD   qgsp-bic-hp
+PhysicsListEM   LivermorePol
+DecayMode       ActivationBuildup
+
+
+Run SpaceSim
+SpaceSim.FileName                  HadronicBackground/HadronicBackground
+SpaceSim.Time                      50
+SpaceSim.IsotopeProductionFile     HadronicBackgroundIsotopes
+
+Include CosmicProtonsSpenvis.partial.source
+Include CosmicAlphasSpenvis.partial.source
+Include AlbedoProtonMizuno.partial.source
+Include AlbedoNeutronsKole.partial.source
+

@@ -1,0 +1,14 @@
+# Components file for the hadron simulations - decay
+
+Include Common.partial.source
+
+# Physics list
+PhysicsListHD                      qgsp-bic-hp
+PhysicsListEM                      LivermorePol
+DecayMode                          ActivationDelayedDecay
+
+Run ActivationStep3
+ActivationStep3.FileName                         HadronicBackgroundDecay
+ActivationStep3.Time                           100
+
+ActivationStep3.ActivationSources                HadronicBackgroundActivation.dat

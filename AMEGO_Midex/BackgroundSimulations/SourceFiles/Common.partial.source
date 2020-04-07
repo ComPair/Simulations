@@ -1,0 +1,12 @@
+# Common setup option for all simulations
+
+# Version of the source file
+Version 1
+
+# Geometry
+Geometry             /data/slag2/ckierans/AMEGO/Geometry/AMEGO_Midex/AmegoBase.geo.setup
+DetectorTimeConstant 0.000005
+
+# Output formats
+StoreSimulationInfo  init-only
+

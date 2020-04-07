@@ -1,0 +1,16 @@
+# Components file for the photon simulations
+
+Include Common.partial.source
+
+# Physics list
+PhysicsListEM LivermorePol
+
+# The simulation run
+Run SpaceSim
+SpaceSim.FileName  PhotonicBackground/PhotonicBackground
+SpaceSim.Time	300
+
+Include CosmicPhotonsGruber.partial.source
+Include AlbedoPhotonsTuerlerMizunoAbdo.partial.source
+Include AnnihilationLineHarris.partial.source
+

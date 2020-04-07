@@ -1,0 +1,15 @@
+# Components file for the trapped hadron simulations - decay
+
+Include Common.partial.source
+
+# Physics list
+PhysicsListHD                      qgsp-bic-hp
+PhysicsListEM                      LivermorePol
+DecayMode                          ActivationDelayedDecay
+
+Run ActivationStep3
+ActivationStep3.FileName             TrappedHadronicBackgroundDecay
+ActivationStep3.Time               100
+
+ActivationStep3.ActivationSources    TrappedHadronicBackgroundActivation.dat
+
