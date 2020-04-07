@@ -1,0 +1,5 @@
+TYPE TRA
+
+IN /data/slag2/ckierans/AMEGO/Simulation-Data-Files/AMEGO_Probe/BackgroundSimulations/TraFiles_R5/ActivationBackground.R5.tra.gz
+IN /data/slag2/ckierans/AMEGO/Simulation-Data-Files/AMEGO_Probe/BackgroundSimulations/TraFiles_R5/PromptBackground.R5.tra.gz
+EN
