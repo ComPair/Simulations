@@ -1,4 +1,7 @@
-In this repository, we have all of the simulations that were run for the AMEGO Probe White Paper. This includes 
+In this repository, we have all of the simulations that were run for the AMEGO Probe White Paper 
+(using this version of the AMEGO geometry located her: ComPair/Geometry/AMEGO_Probe commit: 206732d). 
+
+This includes 
 1) Background Simulations (the .tra files are kept under the Simulation-Data-Files repo),
 2) the mono-energetic point source simulations for instrument performance (which are obtained with the scripts in the python repo; the .tra files are kept under
 the Simulation-Data-Files repo),
