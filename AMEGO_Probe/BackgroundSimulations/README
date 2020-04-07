@@ -1,6 +1,8 @@
 The Background Simulations for AMEGO have been performed in MEGAlib and are detailed on the confluence page: https://confluence.slac.stanford.edu/display/COMPair/Background+Simulations+in+MEGAlib. Here we have included all of the files that were used and created in that process. The raw .sim files from the simulation are not included, since they are prohibitively large, but the final .tra files after event reconstruction are included in ComPair/Simulation-Data-Files/AMEGO_Probe/BackgroundSimulations. 
 
-The *Geometry* directory contains the AMEGO Probe Geometry that was used for the background simulations in June 2019.
+The version of the *Geometry* files used in these simulations is located here (commit: 36983e5):
+https://github.com/ComPair/Geometry/tree/36983e5463f545edb1fd567c8e1a5cd152f2068f
+
 
 The *IsotopeFiles* directory contains the *Isotope.dat files that are created in the first step of the activation simulations (for HadronicComponentsPrompt.source, TrappedHadronicComponentsPrompt.source, and TrappedLeptonicComponentsPrompt.source) 
 
