@@ -1,0 +1,23 @@
+# Components file for the hadron simulations - prompt
+# With simulation for 50s, this should be done 72 times for a 1 hour background sim
+# >> mcosima -t 72 -m 128 -z HadronicComponentsPrompt.source
+
+Include Common.partial.source
+
+
+# Physics list
+PhysicsListHD   qgsp-bic-hp
+PhysicsListEM   LivermorePol
+DecayMode       ActivationBuildup
+
+
+Run SpaceSim
+SpaceSim.FileName                  HadronicBackground
+SpaceSim.Time                      50
+SpaceSim.IsotopeProductionFile     HadronicBackgroundIsotopes
+
+Include CosmicProtonsSpenvis.partial.source
+Include CosmicAlphasSpenvis.partial.source
+Include AlbedoProtonMizuno.partial.source
+Include AlbedoNeutronsKole.partial.source
+

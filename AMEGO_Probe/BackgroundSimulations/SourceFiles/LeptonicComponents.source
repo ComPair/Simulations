@@ -1,0 +1,19 @@
+# Components file for the lepton simulations
+
+Include Common.partial.source
+
+
+# Physics list
+PhysicsListHD   qgsp-bic-hp
+PhysicsListEM   LivermorePol
+
+
+Run SpaceSim
+SpaceSim.FileName  LeptonicBackground
+SpaceSim.Time      450
+
+Include CosmicElectronsMizuno.partial.source
+Include CosmicPositronsMizuno.partial.source
+Include AlbedoElectronsAlcarazMizuno.partial.source
+Include AlbedoPositronsAlcarazMizuno.partial.source
+

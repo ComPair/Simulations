@@ -1,0 +1,16 @@
+# Components file for the hadron simulations - decay
+# With Step 3 of the activation simulation being set for 100 seconds (below) you need to run this 36 times to make a 1 hour backgroud sim
+# >> mcosima -t 36 -m 128 -z HadronicComponentsDecay.source
+
+Include Common.partial.source
+
+# Physics list
+PhysicsListHD                      qgsp-bic-hp
+PhysicsListEM                      LivermorePol
+DecayMode                          ActivationDelayedDecay
+
+Run ActivationStep3
+ActivationStep3.FileName                         HadronicBackgroundDecay
+ActivationStep3.Time                           100
+
+ActivationStep3.ActivationSources                HadronicBackgroundActivation.dat

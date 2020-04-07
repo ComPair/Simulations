@@ -1,0 +1,18 @@
+# Components file for the trapped hadron simulations - prompt
+
+Include Common.partial.source
+
+
+# Physics list
+PhysicsListHD   qgsp-bic-hp
+PhysicsListEM   LivermorePol
+DecayMode       ActivationBuildup
+
+
+Run SpaceSim
+SpaceSim.FileName                  TrappedLeptonicBackground
+SpaceSim.Time                    21
+SpaceSim.IsotopeProductionFile     TrappedLeptonicBackgroundIsotopes
+
+Include TrappedElectronsSpenvis.partial.source
+
