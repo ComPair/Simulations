@@ -48,13 +48,13 @@ Storing event 20000 of 952758 at t_obs=0.0134782s
 
 Summary for run FFPS
 
-Total number of generated particles:     952758
-  Source Pos:                            952758
+Total number of generated particles:     976447
+  Source Pos:                            976447
 
-Total CPU time spent in run:             63.5664 sec
-Time spent per event:                    6.67183e-05 sec
+Total CPU time spent in run:             49.1754 sec
+Time spent per event:                    5.03616e-05 sec
 
-Observation time:                        0.0134782 sec
+Observation time:                        0.0138314 sec
 
 Graphics systems deleted.
 Visualization Manager deleting...
@@ -63,5 +63,4 @@ Visualization Manager deleting...
 This cosima step has created the FarFieldPointSource_1MeV.inc1.id1.sim file which will be used for the subsequent steps of this example.
 
 Next step is to use revan to reconstruct the events... 
-
 
