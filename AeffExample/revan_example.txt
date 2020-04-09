@@ -8,7 +8,7 @@ revan_AMEGO_X.cfg is a configuration file which is a set of pre-selected reconst
 
 Now we're ready to roll...
 
-Reconstruction -> Start event reconstruction Hit the "go" arrow in the gui. 
+Reconstruction -> Start event reconstruction (or hit the "go" arrow in the gui). 
 This creates the file: FarFieldPointSource_1MeV.inc1.id1.tra
 
 
@@ -18,54 +18,54 @@ The final output was:
 
 
 Trigger statistics:
-  Not triggered events: ..................................   5085
-  Number of vetoed events: ...............................    463
+  Not triggered events: ..................................   5031
+  Number of vetoed events: ...............................   1229
     Raised vetoes (multiples possible)
-      MainVetoSide: ......................................    463
+      MainVetoSide: ......................................    502
+      MainVetoTop: .......................................    754
     Raised triggers canceled by a veto (multiples possible)
-      MainTriggerCsI: ....................................     22
-      SiOnly: ............................................    176
-      SingleSiCsI: .......................................     85
-  Number of triggered events: ............................  14452
+      MainTriggerCsI: ....................................     48
+      SiOnly: ............................................    390
+      SingleSiCsI: .......................................    247
+  Number of triggered events: ............................  13740
     Raised triggers (multiples possible)
-      MainTriggerCsI: ....................................   1696
-      SiOnly: ............................................   9524
-      SingleSiCsI: .......................................   6624
+      MainTriggerCsI: ....................................   1561
+      SiOnly: ............................................   8959
+      SingleSiCsI: .......................................   6342
 
 
 ----------------------------------------------------------------------------
 
 Event statistics for all triggered (!) events:
-  Number of events .......................................  14452 (100.000%)
-  Number of events, which passed event selections ........   8359 ( 57.840%)
-  Reconstructable events .................................  14452 (100.000%)
+  Number of events .......................................  13740 (100.000%)
+  Number of events, which passed event selections ........   8014 ( 58.326%)
+  Reconstructable events .................................  13740 (100.000%)
        Single-site  ......................................      0 (  0.000%)
-       Compton  ..........................................   8350 ( 57.777%)
+       Compton  ..........................................   7997 ( 58.202%)
            Decay  ........................................      0 (  0.000%)
        Pair  .............................................      0 (  0.000%)
-       Muon  .............................................      9 (  0.062%)
+       Muon  .............................................     17 (  0.124%)
        PET . .............................................      0 (  0.000%)
        Multi  ............................................      0 (  0.000%)
 
 Rejection reasons for not reconstructable events:
-  Too many hits in CSR ...................................      1
-  Event consists of nothing but one track ................   5437
-  Event consists of nothing but two tracks ...............     57
-  Track is not valid .....................................     32
-  Event starts not in D1 .................................    470
-  Electron direction is not valid ........................     66
-  Comptel type with incompatible kinematics ..............     30
-    Total ................................................   6093
+  Too many hits in CSR ...................................      2
+  Event consists of nothing but one track ................   5102
+  Event consists of nothing but two tracks ...............     38
+  Track is not valid .....................................     22
+  Event starts not in D1 .................................    474
+  Electron direction is not valid ........................     60
+  Comptel type with incompatible kinematics ..............     28
+    Total ................................................   5726
 
 ----------------------------------------------------------------------------
 
-Event reconstruction finished in 3.72303 sec.
 
+Event reconstruction finished in 2.47633 sec.
 
 
 If you used the same seed as I did in the cosima_example.txt file, your numbers should be identical to the ones above. From here you can use the Analysis menu option to explore more about the events, but we're going to move on to mimrec.
 
+>>> Ctrl+C (to exit revan)
+
 Now for mimrec...
-
-
-
