@@ -69,3 +69,49 @@ If you used the same seed as I did in the cosima_example.txt file, your numbers 
 >>> Ctrl+C (to exit revan)
 
 Now for mimrec...
+
+Updated numbers as of megalib version 3.03.01:
+
+Trigger statistics:
+  Not triggered events: ..................................   5031
+  Number of vetoed events: ...............................   1229
+    Raised vetoes (multiples possible)
+      MainVetoSide: ......................................    502
+      MainVetoTop: .......................................    754
+    Raised triggers canceled by a veto (multiples possible)
+      MainTriggerCsI: ....................................     48
+      SiOnly: ............................................    390
+      SingleSiCsI: .......................................    247
+  Number of triggered events: ............................  13740
+    Raised triggers (multiples possible)
+      MainTriggerCsI: ....................................   1561
+      SiOnly: ............................................   8959
+      SingleSiCsI: .......................................   6342
+
+
+----------------------------------------------------------------------------
+
+Event statistics for all triggered (!) events:
+  Number of events .......................................  13740 (100.000%)
+  Number of events, which passed event selections ........   7610 ( 55.386%)
+  Reconstructable events .................................  13740 (100.000%)
+       Single-site  ......................................      0 (  0.000%)
+       Compton  ..........................................   7593 ( 55.262%)
+           Decay  ........................................      0 (  0.000%)
+       Pair  .............................................      0 (  0.000%)
+       Muon  .............................................     17 (  0.124%)
+       PET . .............................................      0 (  0.000%)
+       Multi  ............................................      0 (  0.000%)
+
+Rejection reasons for not reconstructable events:
+  Too many hits in CSR ...................................      3
+  Event consists of nothing but one track ................   5472
+  Event consists of nothing but two tracks ...............     43
+  Track is not valid .....................................     23
+  Event starts not in D1 .................................    513
+  Electron direction is not valid ........................     49
+  Comptel type with incompatible kinematics ..............     27
+    Total ................................................   6130
+
+----------------------------------------------------------------------------
+

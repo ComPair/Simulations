@@ -124,3 +124,103 @@ generated events = 976447 (this is the last line of the .sim file. TS 952758)
 Area of surrounding sphere = 70685.8 (at the top of the sim file the "SimulationStartAreaFarField" parameter)
 
 I get Aeff = 2174 / 976447 * 70685.8 = 157.4 cm^2 for the effective area of AMEGO-X at 1 MeV.
+
+
+Updated numbers as of megalib 3.03.01:
+
+Event selections:
+
+All events  .................... 13740
+Not rejected events  ........... 3222
+
+Rejection reasons:
+
+Not good  ......................  6147
+Event Id .......................  0
+Detector of 1st interaction ....  0
+Detector of 2nd interaction ....  0
+Beam  ..........................  0
+Total energy  ..................  10432
+Time  ..........................  0
+Time walk  .....................  0
+Electron energy  ...............  0
+Gamma energy  ..................  0
+Compton angle  .................  0
+First Lever arm  ...............  3
+Any lever arm  .................  2
+Length Compton sequence ........  0
+Clustering quality factor ......  0
+Compton quality factor .........  0
+Track quality factor ...........  0
+Coincidence window .............  0
+Earth-Horizon cut ..............  0
+Pointing .......................  0
+Max. theta deviation ...........  0
+Max. ARM .......................  0
+Max. SPD .......................  0
+Length track ...................  0
+Opening angle pair  ............  0
+Initial energy deposit pair  ...  0
+Pair quality factor ............  0
+Use photos  ....................  0
+Use pairs  .....................  0
+Use Compton  ...................  0
+Use tracked Compton  ...........  0
+Use not tracked Compton  .......  0
+Use muons  .....................  17
+Use PET  .......................  0
+Use multi  .....................  0
+Use unidentifiables  ...........  6130
+Use decays  ....................  0
+Use flagged as bad  ............  6130
+
+ACCEPTED  ......................  3222
+ANALYZED  ......................  13740
+
+
+Energy spectrum - some additional statistics:
+Number of events:     3222 (inside=3222, outside=0)
+Avg. measured energy: 989.306 keV
+
+TFitEditor::DoFit - using function PrevFitTMP  0x7fe5525f8940
+ FCN=84.5506 FROM MIGRAD    STATUS=CONVERGED      62 CALLS          63 TOTAL
+                     EDM=2.26134e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     4.82436e+01   1.37782e+00   4.79566e-03   2.22135e-04
+   2  Mean         9.89364e+02   6.37290e-01   2.64282e-03  -3.69462e-04
+   3  Sigma        2.58041e+01   5.02738e-01   2.13131e-05  -7.53758e-02
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        3222
+Compton and pair events in histogram:    2840 (88.144%)
+
+RMS:                                     4.34512 deg
+
+Total FWHM of fit (not of data!):        4.42793 deg
+Maximum of fit (x position):             0.176444 deg (1-sigma uncertainty: 0.102333 deg ... 0.249158 deg) with maximum 129.288 cts
+
+
+
+Statistics of ARM histogram and fit
+***********************************
+
+Analyzed Compton and pair events:        3222
+Compton and pair events in histogram:    2169 (67.3184%)
+
+RMS:                                     2.02695 deg
+
+Total FWHM of fit (not of data!):        4.57196 deg
+Maximum of fit (x position):             0.207367 deg (1-sigma uncertainty: 0.142995 deg ... 0.449727 deg) with maximum 36.8229 cts
+
+
+
+To calculate the Aeff: [number of events that were detected with these event selections] / [number of generated events] * [area of surrounding sphere]
+events in histogram = 2169 from above
+generated events = 976447 (this is the last line of the .sim file. TS 952758)
+Area of surrounding sphere = 70685.8 (at the top of the sim file the "SimulationStartAreaFarField" parameter)
+
+I get Aeff = 2169 / 976447 * 70685.8 = 157.02 cm^2 for the effective area of AMEGO-X at 1 MeV.
